@@ -1,7 +1,8 @@
 <?php
-add_action( 'wp_enqueue_scripts', 'my_theme_enqueue_scripts' );
-function my_theme_enqueue_scripts() {
-    wp_enqueue_script( 'bundle', get_stylesheet_directory_uri() . '/dist/bundle.js', array('jquery'), 1, false );
+add_action('wp_enqueue_scripts', 'my_theme_enqueue_scripts' );
+function my_theme_enqueue_scripts() 
+{
+    wp_enqueue_script('bundle', get_stylesheet_directory_uri() . '/dist/bundle.js', array('jquery'), 1, false);
 }
 ?>
 <?php
@@ -11,15 +12,15 @@ function enqueue_load_fa() {
 add_action( 'wp_enqueue_scripts', 'enqueue_load_fa' );
 ?>
 <?php
-function seculin_wp_setup() {
+function chp_wp_setup() {
     add_theme_support( 'title-tag' );
 }
-add_action( 'after_setup_theme', 'seculin_wp_setup' );
+add_action( 'after_setup_theme', 'chp_wp_setup' );
 ?>
 <?php
 function wp_42573_fix_template_caching( WP_Screen $current_screen ) {
     // Only flush the file cache with each request to post list table, edit post screen, or theme editor.
-    if ( ! in_array( $current_screen->base, array( 'post', 'edit', 'theme-editor' ), true ) ) {
+    if (!in_array($current_screen->base, array('post', 'edit', 'theme-editor'), true )) {
         return;
     }
     $theme = wp_get_theme();

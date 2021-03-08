@@ -1,49 +1,17 @@
 <?php
 /*
-    Seculin Theme | Footer
-	Copyright: 2017, Seculin, www.seculin.com
-    Wordpress v5.4
+    CHP Theme | Footer
+    Copyright: 2021, Seculin, www.seculin.com
+    Wordpress v5.6.2
 */
 ?>
 
 <?php wp_footer(); ?>
 
-    <footer>
-        <div class="container-fluid">
-            <div class="col-lg-10 col-md-10 col-sm-10 col-xs-9">
-                <ul class="list-unstyled list-inline">
-                    <li><a href="<?php echo site_url( '/les-liens-utiles' ) ?>">Les liens utiles</a></li>
-                    <li><a href="<?php echo site_url( '/mentions-legales' ) ?>">Mentions légales</a></li>
-                    <li><a href="http://congres.emmanueldelay.fr" target="_blank">Espace médecins</a></li>
-                    <li><a href="<?php echo site_url( '/contact' ) ?>" target="_blank">Contact</a></li>
-                </ul>
-            </div>
-            <div class="col-lg-2 col-md-2 col-sm-2 col-xs-3">
-                <span class="copyright-tag">
-                    Crée par <strong>Seculin</strong>
-                    <img src="<?php echo get_template_directory_uri(); ?>/images/logo_seculin.png" id="seculin-logo" class="img-responsive" alt="seculin-logo">
-                </span>
-            </div>
-        </div>
-    </footer>
-
 </main>
 
-<script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script>
-
-<script>
-    jQuery( document ).ready(function() {
-        AOS.init();
-    });
-</script>
-
-<script>
-    jQuery(window).on('load', function () {
-        AOS.refresh();
-    });
-</script>
-
 <!--  Smooth Scrolling  -->
+
 <script>
     jQuery('a[href]')
         .not('[href="#"]')
@@ -78,33 +46,6 @@
                     });
                 }
             }
-        });
-</script>
-
-<script>
-	jQuery(document).ready(function() {
-
-            // get the current URL
-            var url = jQuery(location).attr('href');
-
-            // if the URL ends with the anchor #portfolioModal93 then we want to open the modal
-            // 
-            
-			var interventions = ["la-chirurgie-esthetique-des-seins", "la-chirurgie-reparatrice-des-seins", "la-chirurgie-plastique-du-visage", "la-chirurgie-de-labdomen", "chirurgie-esthetique-les-cuisses-les-hanches-et-les-fesses", "la-chirurgie-genitale"];
-		
-			var modals = ["1", "2", ,"3" ,"4", "5", "6", "7", "8", "9", "10", "11", "12", "13", "14"];
-		
-			for (y of interventions) {
-				for (x of modals) {
-				current_url = 'http://emmanueldelay.fr/interventions/' + y + '/#intervention-modal-' + x;
-			
-				current_modal = '#intervention-modal-' + x;
-				
-				if(url == (current_url)) {
-                	jQuery(current_modal).modal('show');
-            	}
-		    }
-			}
         });
 </script>
 
