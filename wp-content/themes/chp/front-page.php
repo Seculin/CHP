@@ -9,7 +9,7 @@
 <?php get_header(); ?>
 
 <main>
-    <div class="row">
+    <div class="row orange">
         PLACEHOLDER
     </div>
 
