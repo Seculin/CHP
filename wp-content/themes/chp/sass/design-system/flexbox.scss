@@ -1,0 +1,186 @@
+// ------------------------------------------------------------
+/*
+/*  Flexbox Design System
+*/
+// ------------------------------------------
+
+
+
+.flex {
+    display: flex;
+    position: relative;
+    box-sizing: border-box;
+    @extend .row;
+    @extend .main-start;
+    @extend .cross-baseline;
+}
+
+.row {
+    @extend .flex;
+}
+
+.col {
+    @extend .flex;
+    @extend .flex-col;
+}
+
+.flex-inline {
+    display: inline-flex !important;
+}
+
+@media (orientation: landscape) {
+    /* col-to-row on landscape */
+    .flex-landscape {
+        display: flex;
+    }
+}
+
+@media (min-width: 320px) and (max-width: 480px) and (orientation: landscape) {
+    /* Do not execute col-to-row transformaton on mobiles with keyboard open */
+    .flex-landscape {
+        display: block;
+    }
+}
+
+@media (min-width: 1024px) and (max-width: 1024px) and (orientation: portrait) {
+    /* Do execute col-to-row transformaton on iPad Pro in portrait mode */
+    .flex-landscape {
+        display: flex;
+    }
+}
+
+// ------------------------------------------
+
+/* Flex Row & Col */
+
+.flex-row {
+    flex-direction: row !important;
+}
+
+.flex-col {
+    flex-direction: column !important;
+}
+
+.flex-row-reverse {
+    flex-direction: row-reverse;
+}
+
+.flex-col-reverse {
+    flex-direction: column-reverse;
+}
+
+// ------------------------------------------
+
+/* Wrapping */
+
+.flex-wrap {
+    flex-wrap: wrap;
+}
+
+// ------------------------------------------
+
+/* Main Axis */
+
+.main-center {
+    justify-content: center;
+}
+
+.main-start {
+    justify-content: flex-start;
+}
+
+.main-end {
+    justify-content: flex-end;
+}
+
+.main-around {
+    justify-content: space-around;
+}
+
+.main-between {
+    justify-content: space-between;
+}
+
+// ------------------------------------------
+
+/* Cross Axis */
+
+.cross-center {
+    align-items: center;
+}
+
+.cross-start {
+    align-items: flex-start;
+}
+
+.cross-end {
+    align-items: flex-end;
+}
+
+.cross-baseline {
+    align-items: baseline;
+}
+
+// ------------------------------------------
+
+/* Cross Axis on Wrap */
+
+.wrap-center {
+    align-content: center;
+}
+
+.wrap-start {
+    align-content: start;
+}
+
+.wrap-around {
+    align-content: space-around;
+}
+
+.wrap-between {
+    align-content: space-between;
+}
+
+// ------------------------------------------
+
+/* Self Align */
+
+.self-center {
+    -ms-grid-row-align: center;
+    align-self: center;
+}
+
+.self-start {
+    -ms-grid-row-align: start;
+    align-self: flex-start;
+}
+
+.self-end {
+    -ms-grid-row-align: end;
+    align-self: end;
+    align-self: flex-end;
+}
+
+.self-stretch {
+    -ms-grid-row-align: stretch;
+    align-self: stretch;
+}
+
+// ------------------------------------------
+
+/* Self None */
+
+.self-none {
+    flex: none;
+    /* inflexible (w/h) => flex: 0 0 auto */
+}
+
+// ------------------------------------------
+
+/* Self No Grow */
+
+.self-no-grow {
+    flex-grow: 0 !important;
+}
+
+// ------------------------------------------------------------

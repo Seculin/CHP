@@ -1,0 +1,36 @@
+// ------------------------------------------------------------
+/*
+/*  Layout
+*/
+// ------------------------------------------
+
+@import '../vendor/include-media.scss';
+
+.container {
+    width: 100%;
+    overflow: hidden;
+
+    @include media(">=tablet") {
+        width: 100%;
+        max-width: 1440px;
+        margin: auto;
+        overflow: unset;
+    }
+}
+
+.container_mob_pad {
+    @extend .container;
+    padding: 0 2rem;
+
+    @include media(">=tablet") {
+        padding: 0;
+    }
+}
+
+.mob_pad {
+    padding: 0 2rem !important;
+
+    @include media(">=tablet") {
+        padding: inherit !important;
+    }
+}

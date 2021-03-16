@@ -1,1 +1,25 @@
+// ------------------------------------------------------------
+/*
+/*  Common Stylesheets
+*/
+// ------------------------------------------
+
+@import './global.scss';
+@import './common/classes.scss';
+
+// ------------------------------------------
+//
+// Vendors
+//
+
 @import './vendor/include-media.scss';
+
+// ------------------------------------------
+//
+// Design System
+//
+
+@import './design-system/flexbox.scss';
+@import './common/layout.scss';
+
+// ------------------------------------------------------------

@@ -1,0 +1,130 @@
+// ------------------------------------------------------------
+/*
+/*  Global Classes
+*/
+// ------------------------------------------
+
+@import '../vendor/include-media.scss';
+
+// ------------------------------------------
+//
+// Opacity
+//
+// ------------------------------------------
+
+$sizes: 9;
+
+@for $i from 1 through $sizes {
+    .op-#{$i} {
+        opacity: '0.#{$i}';
+    }
+}
+
+// ------------------------------------------
+//
+// Font Sizes
+//
+// ------------------------------------------
+
+// Mobile
+
+$sizes: 100;
+
+@for $i from 1 through $sizes {
+    .font-#{$i} {
+        font-size: #{$i} + 'px';
+    }
+}
+
+// -----------------------------
+
+// Desktop
+
+@for $i from 1 through $sizes {
+    .font-d-#{$i} {
+        @include media(">desktop") {
+            font-size: #{$i} + 'px';
+        }
+    }
+}
+
+// ------------------------------------------
+//
+// Line Heights
+//
+// ------------------------------------------
+
+// Mobile
+
+$sizes: 100;
+
+@for $i from 1 through $sizes {
+    .lh-#{$i} {
+        line-height: #{$i} + 'px';
+    }
+}
+
+// -----------------------------
+
+// Desktop
+
+@for $i from 1 through $sizes {
+    .lh-d-#{$i} {
+        @include media(">desktop") {
+            line-height: #{$i} + 'px';
+        }
+    }
+}
+
+// ------------------------------------------
+//
+// Letter Spacing
+//
+// ------------------------------------------
+
+$sizes: 10;
+
+.ls-05 {
+    letter-spacing: 0.5px;
+}
+
+@for $i from 1 through $sizes {
+    .ls-#{$i} {
+        letter-spacing: #{$i} + 'px';
+    }
+}
+
+// ------------------------------------------
+//
+// Font Weight
+//
+// ------------------------------------------
+
+$sizes: 9;
+
+@for $i from 1 through $sizes {
+    .fw-#{$i} {
+        font-weight: #{$i} + '00';
+    }
+}
+
+
+// ------------------------------------------
+//
+// Landscape & Portrait Only
+//
+// ------------------------------------------
+
+@media (orientation: landscape) {
+    .portrait-only {
+        display: none !important;
+    }
+}
+
+@media (orientation: portrait) {
+    .landscape-only {
+        display: none !important;
+    }
+}
+
+// ------------------------------------------------------------

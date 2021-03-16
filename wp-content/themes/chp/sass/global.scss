@@ -1,0 +1,173 @@
+// ------------------------------------------------------------
+/*
+/*  Global Styles
+*/
+// ------------------------------------------
+
+:root {
+    --chp-color-default: #41505c;
+
+    /* Basic Colors */
+    --chp-color-white: #ffffff;
+    --chp-color-background: #f6f7f8;
+    --chp-color-black: #000000;
+
+    /* Statuses */
+    --chp-color-status-error: #d14563;
+    --chp-color-status-success: rgb(6, 121, 6);
+    --chp-color-status-warning: rgb(201, 130, 0);
+
+    /* BW Variants */
+    --chp-color-white-20: rgba(255, 255, 255, 0.2);
+    --chp-color-white-40: rgba(255, 255, 255, 0.4);
+    --chp-color-white-60: rgba(255, 255, 255, 0.6);
+    --chp-color-white-80: rgba(255, 255, 255, 0.8);
+    --chp-color-black-20: rgba(0, 0, 0, 0.2);
+    --chp-color-black-40: rgba(0, 0, 0, 0.2);
+    --chp-color-black-60: rgba(0, 0, 0, 0.2);
+    --chp-color-black-80: rgba(0, 0, 0, 0.2);
+}
+
+// ------------------------------------------
+
+/* HTML Defaults Overrides */
+
+a {
+    color: currentColor;
+    background-color: transparent;
+    text-decoration: none;
+    font: inherit;
+}
+
+button {
+    border: none;
+    margin: none;
+    outline: none;
+    border-radius: 0;
+    //
+    appearance: none;
+    -ms-touch-action: manipulation;
+    touch-action: manipulation;
+    touch-action: none;
+    -webkit-user-select: none;
+    user-select: none;
+    cursor: pointer;
+
+    font-family: inherit;
+    font-size: inherit;
+    text-transform: none;
+
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-appearance: none;
+
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+
+    overflow: visible;
+    width: max-content;
+    max-width: 100%;
+
+    svg {
+        display: inline-flex;
+    }
+
+    &::-moz-focus-inner {
+        border: 0;
+    }
+}
+
+// ------------------------------------------
+
+/* Critical CSS */
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    color: currentColor;
+}
+
+* {
+    background-repeat: no-repeat;
+    @extend .nobound;
+}
+
+@viewport {
+    width: device-width;
+}
+
+img {
+    border: 0;
+    border-style: none;
+    vertical-align: middle;
+    max-width: 100%;
+    height: auto;
+}
+
+.no-clipping {
+    background-size: contain;
+    background-repeat: round;
+}
+
+svg {
+    overflow: hidden;
+    vertical-align: middle;
+}
+
+[disabled] {
+    cursor: not-allowed;
+}
+
+a,
+a:visited,
+a:hover {
+    touch-action: manipulation;
+    color: currentColor;
+    background-color: transparent;
+}
+
+html {
+    -webkit-text-size-adjust: 100%;
+    text-size-adjust: 100%;
+    -ms-overflow-style: -ms-autohiding-scrollbar;
+    -webkit-tap-highlight-color: transparent;
+    scroll-behavior: smooth;
+    block-size: 100%;
+    inline-size: 100%;
+}
+
+html:focus-within {
+    scroll-behavior: smooth;
+}
+
+body {
+    text-rendering: optimizeLegibility;
+    text-align: left;
+    overflow-y: scroll;
+    min-block-size: 100%;
+    min-inline-size: 100%;
+}
+
+main {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@media (prefers-reduced-motion: reduce) {
+    html:focus-within {
+        scroll-behavior: auto;
+    }
+    *,
+    *::before,
+    *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+        scroll-behavior: auto !important;
+    }
+}
+
+// ------------------------------------------------------------
