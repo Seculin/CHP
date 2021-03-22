@@ -149,8 +149,11 @@ body {
   font-variant: normal;
   text-transform: none;
   -webkit-font-smoothing: antialiased;
+}
+
+body {
   overflow-x: hidden;
-  overflow-y: scroll;
+  overflow-y: auto;
 }
 
 .container-fluid,
