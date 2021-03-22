@@ -1,9 +1,10 @@
 <IfModule mod_rewrite.c>
 RewriteEngine On
 RewriteRule .* - [E=HTTP_AUTHORIZATION:%{HTTP:Authorization}]
-RewriteBase /~jancimac/CHP/
+RewriteBase /html/CHP/
 RewriteRule ^index\.php$ - [L]
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d
-RewriteRule . /~jancimac/CHP/index.php [L]
+RewriteRule . /html/CHP/index.php [L]
 </IfModule>
+
