@@ -1,4 +1,4 @@
-@import '../common.scss';
+@import "../common.scss";
 
 // CHP Landing Page
 
@@ -14,5 +14,36 @@ header {
 
     .chp_header_content {
         color: var(--chp-color-white);
+        height: calc(100vh - 105px);
+
+        .container {
+            .chp_header_title {
+                font-family: var(--chp-font-opensans-light);
+                text-transform: uppercase;
+                letter-spacing: 3px;
+                font-size: 55px;
+                margin-bottom: 30px;
+            }
+
+            .chp_header_subtitle {
+                width: 45%;
+                font-family: var(--chp-font-opensans-light);
+                letter-spacing: 3px;
+                line-height: 200%;
+                font-size: 24px;
+                margin-bottom: 80px;
+            }
+
+            .chp_header_links {
+                a {
+                    letter-spacing: 0.3px;
+                    margin-right: 40px;
+
+                    &:last-child {
+                        margin-right: 0;
+                    }
+                }
+            }
+        }
     }
 }

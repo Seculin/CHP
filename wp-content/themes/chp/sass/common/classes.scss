@@ -26,6 +26,28 @@
     }
 }
 
+.chp_button_light {
+    color: var(--chp-color-white) !important;
+    font-size: 16px !important;
+    letter-spacing: 0.3px !important;
+
+    svg {
+        color: var(--chp-color-text-light) !important;
+        width: 12px !important;
+        margin-left: 10px !important;
+        transform: translate(0, 0px) !important;
+        opacity: 0.8 !important;
+    }
+
+    &:hover {
+        color: var(--chp-color-white) !important;
+
+        svg {
+            opacity: 1 !important;
+        }
+    }
+}
+
 .chp_chevron_down_style {
     color: var(--chp-color-default);
     width: 8px;
