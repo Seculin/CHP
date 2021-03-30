@@ -25,6 +25,8 @@
 
     <link href="https://fonts.googleapis.com/css?family=Dosis" rel="stylesheet">
 
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/js/all.min.js"></script>
+
     <link 
         href="<?php echo get_template_directory_uri(); ?>/style.css" 
         rel="stylesheet"

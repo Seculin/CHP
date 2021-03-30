@@ -1,0 +1,18 @@
+@import '../common.scss';
+
+// CHP Landing Page
+
+header {
+    width: 100%;
+    margin-top: 105px !important;
+    min-height: calc(100vh - 105px);
+    height: auto;
+    background-position: center !important;
+    background-size: cover !important;
+    background-attachment: inherit !important;
+    background-repeat: no-repeat !important;
+
+    .chp_header_content {
+        color: var(--chp-color-white);
+    }
+}

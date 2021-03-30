@@ -1,0 +1,259 @@
+@import '../common.scss';
+
+// CHP Navigation
+
+#chp_nav {
+    position: fixed;
+    width: 100%;
+    min-height: 105px;
+    height: auto;
+    box-shadow: 0 0 15px var(--chp-color-box-shadow);
+    z-index: 9999 !important;
+
+    #chp_nav_1 {
+        color: var(--chp-color-text-white);
+        background: var(--chp-color-default);
+        width: 100%;
+        min-height: 30px;
+        height: 30px;
+        padding: 5px 0;
+        font-size: 12px;
+        //
+
+
+        .nav_1_item {
+            margin-left: 60px;
+
+            &:first-child {
+                margin-left: 0;
+                flex-grow: 1;
+            }
+
+            svg {
+                margin-right: 5px;
+                opacity: 0.9;
+            }
+
+            span {
+                height: 20px;
+                line-height: 20px;
+                letter-spacing: 0.5px;
+                opacity: 0.8;
+            }
+        }
+    }
+
+    #chp_nav_2 {
+        background: var(--chp-color-background);
+        border-bottom: 0.1px rgba(0, 0, 0, 0.2) solid;
+        width: 100%;
+        min-height: 75px;
+        height: 75px;
+        padding: 15px 0;
+        font-size: 16px;
+
+        #chp_nav_site_logo {
+            flex-grow: 1;
+
+            img {
+                height: 45px;
+                width: auto;
+                margin-right: 15px;
+            }
+
+            .chp_nav_site_title {
+                font-family: var(--chp-font-opensans);
+                color: var(--chp-color-text-dark);
+                letter-spacing: 0.1px;
+                text-transform: uppercase;
+                height: 45px;
+                line-height: 45px;
+            }
+        }
+
+        #chp_nav_wrapper {
+            @extend .chp_nav_site_title;
+            display: flex;
+
+            .chp_nav_items {
+                color: var(--chp-color-text-dark);
+                font-size: 16px;
+                letter-spacing: 0.5px;
+
+                .chp_nav_item {
+                    text-transform: uppercase;
+                    margin-right: 50px;
+                    opacity: 0.8;
+
+                    svg {
+                        @extend .chp_chevron_down_style;
+                        width: 10px;
+                        transform: none;
+                    }
+
+                    &:hover {
+                        opacity: 1;
+                        cursor: pointer;
+                    }
+
+                    &:last-child {
+                        margin-right: 0;
+                    }
+                }
+            }
+        }
+    }
+
+    // Sub Menus
+    #chp_nav_medecins, #chp_nav_cliniques {
+        color: var(--chp-color-text-dark);
+        background: var(--chp-color-background);
+        box-shadow: 0 0 10px var(--chp-color-box-shadow);
+        width: 100%;
+        height: auto;
+        padding: 50px 0;
+        font-size: 16px;
+        //
+        display: none;
+    }
+
+    #chp_nav_medecins {
+        .chp_nd_medecins {
+            .chp_nd_medecin {
+                width: 400px;
+                height: 100%;
+                //
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-content: center;
+                text-align: center;
+
+                img {
+                    margin: 0 auto 20px;
+                }
+
+                .chp_nd_medecin_name {
+                    font-family: var(--chp-font-opensans-semibold);
+                    color: var(--chp-color-default);
+                    text-transform: uppercase;
+                    font-size: 18px;
+                    // 
+                    margin-bottom: 10px;
+                }
+
+                .chp_nd_medecin_role {
+                    font-family: var(--chp-font-opensans);
+                    color: var(--chp-color-text-dark);
+                    text-transform: uppercase;
+                    font-size: 14px;
+                    // 
+                    margin-bottom: 20px;
+                }
+
+                .chp_nd_medecin_desc {
+                    font-family: var(--chp-font-opensans);
+                    color: var(--chp-color-text-dark);
+                    font-size: 12px;
+                    line-height: 200%;
+                    width: 70%;
+                    margin-left: auto;
+                    margin-right: auto;
+                    opacity: 0.8;
+                    // 
+                    margin-bottom: 20px;
+                }
+
+                .chp_button {
+                    svg {
+                        width: 8px;
+                    }
+                }
+            }
+        }
+    }
+
+    #chp_nav_cliniques {
+        .chp_nd_cliniques {
+            .chp_nd_clinique_column {
+                width: 400px;
+                height: 100%;
+                //
+                display: flex;
+                flex-direction: column;
+                justify-content: flex-start;
+                align-content: center;
+                text-align: left;
+
+                .chp_ndc_category {
+                    display: flex;
+                    align-items: center;
+                    width: 100%;
+                    height: 15px;
+                    font-family: var(--chp-font-opensans);
+                    line-height: 15px;
+                    margin-bottom: 40px;
+                    opacity: 0.8;
+
+                    span {
+                        color: var(--chp-color-text-medium);
+                        font-size: 14px;
+                        text-transform: uppercase;
+                        margin-right: 14px;
+                        flex: 1;
+                    }
+
+                    .chp_ndc_cat_line {
+                        width: 100%;
+                        min-height: 1px;
+                        height: 1px;
+                        background: var(--chp-color-text-light);
+                        flex-grow: 1;
+                    }
+                }
+
+                .chp_ndc_clinique {
+                    width: 350px;
+                    height: 80px;
+                    margin-bottom: 40px;
+
+                    &:last-child {
+                        margin-bottom: 0;
+                    }
+
+                    img {
+                        margin-right: 20px;
+                    }
+
+                    .chp_ndc_clinique_info {
+
+                        .chp_ndc_name {
+                            font-family: var(--chp-font-opensans-semibold);
+                            color: var(--chp-color-default);
+                            text-transform: uppercase;
+                            font-size: 16px;
+                            // 
+                            margin-bottom: 10px;
+                        }
+
+                        .chp_ndc_address {
+                            font-family: var(--chp-font-opensans);
+                            color: var(--chp-color-text-dark);
+                            font-size: 12px;
+                            line-height: 200%;
+                            opacity: 0.8;
+                            // 
+                            margin-bottom: 10px;
+                        }
+
+                        .chp_button {
+                            svg {
+                                width: 8px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

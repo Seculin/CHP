@@ -9,8 +9,7 @@
 <?php get_header(); ?>
 
 <main>
-    <div class="row orange">
-        PLACEHOLDER
-    </div>
+
+    <?php get_template_part('template-parts/header/page', 'header'); ?>
 
 <?php get_footer(); ?>

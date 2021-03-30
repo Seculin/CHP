@@ -4,24 +4,21 @@
 */
 // ------------------------------------------
 
-
-
 .flex {
     display: flex;
     position: relative;
     box-sizing: border-box;
-    @extend .row;
-    @extend .main-start;
-    @extend .cross-baseline;
+    flex-direction: row;
 }
 
 .row {
     @extend .flex;
+    flex-direction: row !important;
 }
 
 .col {
     @extend .flex;
-    @extend .flex-col;
+    flex-direction: column !important;
 }
 
 .flex-inline {

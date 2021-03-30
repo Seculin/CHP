@@ -6,6 +6,7 @@
 
 @import './global.scss';
 @import './common/classes.scss';
+@import './common/fonts.scss';
 
 // ------------------------------------------
 //
@@ -20,6 +21,10 @@
 //
 
 @import './design-system/flexbox.scss';
+@import './design-system/animations.scss';
 @import './common/layout.scss';
 
 // ------------------------------------------------------------
+
+/* JSDelivr */
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css');

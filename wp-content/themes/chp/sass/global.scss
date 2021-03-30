@@ -5,11 +5,31 @@
 // ------------------------------------------
 
 :root {
-    --chp-color-default: #41505c;
+    --chp-color-default: #532224;
+    --chp-color-default-dark: #421a1b;
+    --chp-color-background: #fffdff;
+    --chp-color-text-white: #faf9f7;
+    --chp-color-text-dark: #3a3b3b;
+    --chp-color-text-medium: #5b5f5f;
+    --chp-color-text-light: #959595;
+    --chp-color-box-shadow: #bdb9b9;
+    --chp-color-border: #707070;
+
+    --chp-font-main: CharterRegular;
+    --chp-font-italic: CharterItalic;
+    --chp-font-bold: CharterBold;
+    --chp-font-bold-italic: CharterBoldItalic;
+
+    --chp-font-opensans: OpenSansRegular;
+    --chp-font-opensans-light: OpenSansLight;
+    --chp-font-opensans-semibold: OpenSansSemiBold;
+    --chp-font-opensans-bold: OpenSansBold;
+    --chp-font-opensans-extrabold: OpenSansExtraBold;
+
+
 
     /* Basic Colors */
     --chp-color-white: #ffffff;
-    --chp-color-background: #f6f7f8;
     --chp-color-black: #000000;
 
     /* Statuses */
@@ -23,9 +43,9 @@
     --chp-color-white-60: rgba(255, 255, 255, 0.6);
     --chp-color-white-80: rgba(255, 255, 255, 0.8);
     --chp-color-black-20: rgba(0, 0, 0, 0.2);
-    --chp-color-black-40: rgba(0, 0, 0, 0.2);
-    --chp-color-black-60: rgba(0, 0, 0, 0.2);
-    --chp-color-black-80: rgba(0, 0, 0, 0.2);
+    --chp-color-black-40: rgba(0, 0, 0, 0.4);
+    --chp-color-black-60: rgba(0, 0, 0, 0.6);
+    --chp-color-black-80: rgba(0, 0, 0, 0.8);
 }
 
 // ------------------------------------------

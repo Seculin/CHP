@@ -2,7 +2,14 @@
 add_action('wp_enqueue_scripts', 'my_theme_enqueue_scripts' );
 function my_theme_enqueue_scripts() 
 {
-    wp_enqueue_script('bundle', get_stylesheet_directory_uri() . '/dist/bundle.js', array('jquery'), 1, false);
+    wp_enqueue_script('bundle', get_stylesheet_directory_uri() . '/build/js/main.js', array('jquery'), 1, false);
+}
+?>
+<?php
+add_action('wp_enqueue_styles', 'my_theme_enqueue_styles' );
+function my_theme_enqueue_styles() 
+{
+    wp_enqueue_style( 'style', get_stylesheet_uri() );
 }
 ?>
 <?php

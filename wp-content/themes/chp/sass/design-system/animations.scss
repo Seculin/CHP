@@ -1,0 +1,29 @@
+// ------------------------------------------------------------
+/*
+/*  Animations
+*/
+// ------------------------------------------
+
+@-webkit-keyframes buttonAnimation {
+    0% {
+        transform: none;
+    }
+    50% {
+        transform: translate(2px, -2px) rotate(-20deg);
+    }
+    100% {
+        transform: none;
+    }
+}
+
+@keyframes buttonAnimation {
+    0% {
+        transform: none;
+    }
+    50% {
+        transform: translate(2px, -2px) rotate(-20deg);
+    }
+    100% {
+        transform: none;
+    }
+}

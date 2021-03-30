@@ -16,11 +16,20 @@ Text Domain: CHP
 
 //------------------------------------------------------------------------------
 
-// Imports
+// Common
 
 // ------------------------------------------------------------------------------
 
 @import './sass/common.scss';
+
+//------------------------------------------------------------------------------
+
+// Components
+
+// ------------------------------------------------------------------------------
+
+@import './sass/components/navigation.scss';
+@import './sass/components/landing.scss';
 
 //------------------------------------------------------------------------------
 
@@ -216,17 +225,8 @@ html, body {
 // -----------------------------------------------------------------------------
 
 html, body {
-  background-color: orange;
-
-  @include media(">tablet") {
-    background-color: green;
-  }
-
-  @include media(">desktop") {
-    background-color: violet;
-  }
-
-  // @include bp(default) {
-  //   background-color: violet;
-  // }
+  // background: url('./assets/src/img/grid.jpg');
+  background-color: var(--chp-color-white-80);
+  background-repeat: repeat;
+  font-family: var(--chp-font-main);
 }

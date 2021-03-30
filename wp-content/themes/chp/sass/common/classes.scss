@@ -4,7 +4,44 @@
 */
 // ------------------------------------------
 
-@import '../vendor/include-media.scss';
+@import "../vendor/include-media.scss";
+
+.chp_button {
+    font-family: var(--chp-font-opensans);
+    color: var(--chp-color-text-dark);
+    text-transform: uppercase;
+    font-size: 13px;
+
+    &:hover {
+        font-family: var(--chp-font-opensans);
+        color: var(--chp-color-text-dark);
+
+        svg {
+            animation: 0.5s buttonAnimation 0s forwards;
+        }
+    }
+
+    svg {
+        @extend .chp_chevron_down_style;
+    }
+}
+
+.chp_chevron_down_style {
+    color: var(--chp-color-default);
+    width: 8px;
+    margin-left: 3px;
+    transform: translate(0, 0px);
+}
+
+.nav_img {
+    max-width: 80px;
+    width: 80px;
+    max-height: 80px;
+    height: 80px;
+    border-radius: 40px;
+    border: 2px var(--chp-color-white) solid;
+    box-shadow: 0 0 15px var(--chp-color-text-light);
+}
 
 // ------------------------------------------
 //
@@ -16,7 +53,7 @@ $sizes: 9;
 
 @for $i from 1 through $sizes {
     .op-#{$i} {
-        opacity: '0.#{$i}';
+        opacity: "0.#{$i}";
     }
 }
 
@@ -32,7 +69,7 @@ $sizes: 100;
 
 @for $i from 1 through $sizes {
     .font-#{$i} {
-        font-size: #{$i} + 'px';
+        font-size: #{$i} + "px";
     }
 }
 
@@ -43,7 +80,7 @@ $sizes: 100;
 @for $i from 1 through $sizes {
     .font-d-#{$i} {
         @include media(">desktop") {
-            font-size: #{$i} + 'px';
+            font-size: #{$i} + "px";
         }
     }
 }
@@ -60,7 +97,7 @@ $sizes: 100;
 
 @for $i from 1 through $sizes {
     .lh-#{$i} {
-        line-height: #{$i} + 'px';
+        line-height: #{$i} + "px";
     }
 }
 
@@ -71,7 +108,7 @@ $sizes: 100;
 @for $i from 1 through $sizes {
     .lh-d-#{$i} {
         @include media(">desktop") {
-            line-height: #{$i} + 'px';
+            line-height: #{$i} + "px";
         }
     }
 }
@@ -90,7 +127,7 @@ $sizes: 10;
 
 @for $i from 1 through $sizes {
     .ls-#{$i} {
-        letter-spacing: #{$i} + 'px';
+        letter-spacing: #{$i} + "px";
     }
 }
 
@@ -104,10 +141,9 @@ $sizes: 9;
 
 @for $i from 1 through $sizes {
     .fw-#{$i} {
-        font-weight: #{$i} + '00';
+        font-weight: #{$i} + "00";
     }
 }
-
 
 // ------------------------------------------
 //
