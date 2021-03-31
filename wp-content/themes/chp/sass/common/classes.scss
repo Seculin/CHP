@@ -8,7 +8,7 @@
 
 .section_base {
     width: 100%;
-    min-height: 60vh;
+    min-height: 50vh;
     height: auto;
     background: var(--chp-color-background);
     padding: 140px 0;
@@ -33,6 +33,10 @@
     line-height: 200%;
     letter-spacing: 2px;
     font-size: 15px;
+}
+
+.icon-rotate {
+    transform: rotate(90deg);
 }
 
 .chp_light {

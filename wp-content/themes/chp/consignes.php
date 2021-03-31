@@ -30,7 +30,9 @@
                     <div id="c_pre_o" class="chp_consignes_thumb flex row main-start cross-center">
                         <h4>Consignes pré-opératoires</h4>
 
-                        <i class="fas fa-chevron-right"></i>
+                        <span id="c_pre_o_icon">
+                            <i class="fas fa-chevron-right"></i>
+                        </span>
                     </div>
 
                     <div id="c_pre_o_content" class="chp_consignes_content">
@@ -84,7 +86,9 @@
                     <div id="c_post_o" class="chp_consignes_thumb flex row main-start cross-center">
                         <h4>Consignes post-opératoires</h4>
 
-                        <i class="fas fa-chevron-right"></i>
+                        <span id="c_post_o_icon">
+                            <i class="fas fa-chevron-right"></i>
+                        </span>
                     </div>
 
                     <div id="c_post_o_content" class="chp_consignes_content">

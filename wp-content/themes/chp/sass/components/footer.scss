@@ -1,0 +1,33 @@
+@import "../common.scss";
+
+// CHP Footer
+
+#chp_footer {
+    color: var(--chp-color-text-white);
+    font-family: var(--chp-font-opensans);
+    background: var(--chp-color-default);
+    width: 100%;
+    min-height: 85px;
+    height: 85px;
+    font-size: 12px;
+    overflow: hidden;
+
+    span {
+        flex-grow: 1;
+        height: 20px;
+        line-height: 20px;
+        letter-spacing: 0.5px;
+
+        img {
+            display: inline-block;
+            width: 20px;
+            height: 20px;
+            margin-left: 5px;
+            opacity: 0.8;
+        }
+    }
+
+    .chp_footer_logo {
+        opacity: 0.3;
+    }
+}

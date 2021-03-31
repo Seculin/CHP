@@ -25,6 +25,10 @@
                 &:hover {
                     cursor: pointer;
                 }
+
+                #c_pre_o_icon, #c_post_o_icon {
+                    transition: transform 1s;
+                }
             }
 
             h4 {
@@ -45,6 +49,7 @@
 
             .chp_consignes_content {
                 @extend .paragraph_base;
+                font-size: 12px !important;
                 width: 85%;
                 padding: 10px 0 60px;
                 letter-spacing: 0.1px;

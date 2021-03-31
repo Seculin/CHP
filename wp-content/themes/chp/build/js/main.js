@@ -117,7 +117,10 @@ jQuery(document).ready(function () {
   var cliniques_nav = jQuery("#chp_nav_cliniques"); // Consignes
 
   var c_pre_content = jQuery("#c_pre_o_content");
-  var c_post_content = jQuery("#c_post_o_content");
+  var c_post_content = jQuery("#c_post_o_content"); // Icons
+
+  var c_pre_o_icon = document.getElementById("c_pre_o_icon");
+  var c_post_o_icon = document.getElementById("c_post_o_icon");
   medecins_link.hover(function () {
     cliniques_nav.hide();
     medecins_nav.show();
@@ -128,9 +131,21 @@ jQuery(document).ready(function () {
   });
   c_pre_link.on("click", function () {
     c_pre_content.toggle();
+
+    if (c_pre_o_icon.classList.contains("icon-rotate")) {
+      c_pre_o_icon.classList.remove("icon-rotate");
+    } else {
+      c_pre_o_icon.classList.add("icon-rotate");
+    }
   });
   c_post_link.on("click", function () {
     c_post_content.toggle();
+
+    if (c_post_o_icon.classList.contains("icon-rotate")) {
+      c_post_o_icon.classList.remove("icon-rotate");
+    } else {
+      c_post_o_icon.classList.add("icon-rotate");
+    }
   });
   navbar.hover(function () {
     return null;

@@ -24,6 +24,10 @@ jQuery( document ).ready(function() {
     const c_pre_content = jQuery("#c_pre_o_content");
     const c_post_content = jQuery("#c_post_o_content");
 
+    // Icons
+    const c_pre_o_icon = document.getElementById("c_pre_o_icon");
+    const c_post_o_icon = document.getElementById("c_post_o_icon");
+
     medecins_link.hover(() => {
         cliniques_nav.hide();
         medecins_nav.show();
@@ -36,10 +40,24 @@ jQuery( document ).ready(function() {
 
     c_pre_link.on("click", () => {
         c_pre_content.toggle();
+
+        if (c_pre_o_icon.classList.contains("icon-rotate")) {
+            c_pre_o_icon.classList.remove("icon-rotate")
+        } else {
+            c_pre_o_icon.classList.add("icon-rotate")
+
+        }
     })
 
     c_post_link.on("click", () => {
         c_post_content.toggle();
+
+        if (c_post_o_icon.classList.contains("icon-rotate")) {
+            c_post_o_icon.classList.remove("icon-rotate")
+        } else {
+            c_post_o_icon.classList.add("icon-rotate")
+
+        }
     })
 
     navbar.hover(() => {
