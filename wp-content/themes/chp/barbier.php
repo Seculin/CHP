@@ -12,8 +12,10 @@
 <main>
 
     <section class="chp_header chp_h_medecins">
-        <div class="container">
-            <h3>Barbier</h3>
+        <div class="chp_container">
+            <div class="container">
+                <h3>Barbier</h3>
+            </div>
         </div>
     </section>
 

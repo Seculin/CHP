@@ -10,13 +10,24 @@ header {
     width: 100%;
     min-height: calc(100vh - 105px);
     height: auto;
-    background-image: url('./assets/src/img/header-bg.jpg');
-    background-position: center !important;
-    background-size: cover !important;
-    background-attachment: inherit !important;
-    background-repeat: no-repeat !important;
+    position: relative;
+
+    &::before {
+        content: "";
+        position: absolute;
+        top: 0; left: 0;
+        width: 100%; height: 100%;
+        // filter: grayscale(100%);
+        //
+        background-image: url('./assets/src/img/header-bg.jpg');
+        background-position: center !important;
+        background-size: cover !important;
+        background-attachment: inherit !important;
+        background-repeat: no-repeat !important;
+    }
 
     .chp_header_content {
+        position: relative;
         color: var(--chp-color-white);
         height: calc(100vh - 105px);
 
