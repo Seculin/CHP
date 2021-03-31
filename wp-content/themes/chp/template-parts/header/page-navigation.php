@@ -43,10 +43,18 @@
 
                     <div id="chp_nav_wrapper">
                         <div class="chp_nav_items flex row main-end">
-                            <div class="chp_nav_item" id="chp_nav_medecins_link">Mèdecins <i class="fas fa-chevron-down"></i></div>
-                            <div class="chp_nav_item" id="chp_nav_cliniques_link">Cliniques <i class="fas fa-chevron-down"></i></div>
-                            <div class="chp_nav_item">Pathologies</div>
-                            <div class="chp_nav_item">Consignes Péri-Opèratoires</div>
+                            <div class="chp_nav_item" id="chp_nav_medecins_link">
+                                Mèdecins <i class="fas fa-chevron-down"></i>
+                            </div>
+                            <div class="chp_nav_item" id="chp_nav_cliniques_link">
+                                Cliniques <i class="fas fa-chevron-down"></i>
+                            </div>
+                            <div class="chp_nav_item">
+                                <a href="<?php echo site_url( '/pathologies' ) ?>">Pathologies</a>
+                            </div>
+                            <div class="chp_nav_item">
+                                <a href="<?php echo site_url( '/consignes-peri-operatoires' ) ?>">Consignes Péri-Opèratoires</a>
+                            </div>
                         </div>
                     </div>
                 </div>

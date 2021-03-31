@@ -6,6 +6,20 @@
 
 @import "../vendor/include-media.scss";
 
+.section_base {
+    width: 100%;
+    min-height: 70vh;
+    height: auto;
+    background: var(--chp-color-background);
+    padding: 100px 0;
+
+    h3 {
+        color: var(--chp-color-default);
+        font-family: var(--chp-font-opensans);
+        text-transform: uppercase;
+    }
+}
+
 .chp_button {
     font-family: var(--chp-font-opensans);
     color: var(--chp-color-text-dark);

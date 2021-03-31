@@ -165,6 +165,10 @@ html, body {
   overflow-y: hidden;
 }
 
+body {
+  overflow-y: scroll;
+}
+
 .container-fluid,
 .row,
 .col-lg-1,
