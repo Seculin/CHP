@@ -20,14 +20,22 @@
     }
 }
 
+.chp_light {
+    color: var(--chp-color-text-white) !important;
+}
+
+.chp_light_v2 {
+    color: var(--chp-color-text-white-light) !important;
+}
+
 .chp_button {
-    font-family: var(--chp-font-opensans);
+    font-family: var(--chp-font-opensans-semibold);
     color: var(--chp-color-text-dark);
     text-transform: uppercase;
     font-size: 13px;
 
     &:hover {
-        font-family: var(--chp-font-opensans);
+        font-family: var(--chp-font-opensans-semibold);
         color: var(--chp-color-text-dark);
 
         svg {
@@ -55,6 +63,27 @@
 
     &:hover {
         color: var(--chp-color-white) !important;
+
+        svg {
+            opacity: 1 !important;
+        }
+    }
+}
+
+.chp_button_dark {
+    font-family: var(--chp-font-opensans-semibold);
+    font-size: 16px !important;
+    letter-spacing: 0.3px !important;
+
+    svg {
+        width: 12px !important;
+        margin-left: 10px !important;
+        transform: translate(0, 0px) !important;
+        opacity: 0.8 !important;
+    }
+
+    &:hover {
+        font-family: var(--chp-font-opensans-semibold);
 
         svg {
             opacity: 1 !important;

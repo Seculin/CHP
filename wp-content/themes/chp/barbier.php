@@ -12,7 +12,7 @@
 <main>
 
     <section class="chp_header chp_h_medecins">
-        <div class="chp_container">
+        <div class="chp_container flex column main-center cross-center">
             <div class="container">
                 <h3>Barbier</h3>
             </div>

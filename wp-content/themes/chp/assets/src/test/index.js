@@ -22,7 +22,7 @@ jQuery( document ).ready(function() {
     navbar.hover(() => {
         return null;
     }, () => {
-        // medecins_nav.hide();
-        // cliniques_nav.hide();
+        medecins_nav.hide();
+        cliniques_nav.hide();
     })
 });

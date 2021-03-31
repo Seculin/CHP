@@ -143,7 +143,7 @@
                 }
 
                 .chp_nd_medecin_role {
-                    font-family: var(--chp-font-opensans);
+                    font-family: var(--chp-font-opensans-semibold);
                     color: var(--chp-color-text-dark);
                     text-transform: uppercase;
                     font-size: 14px;
@@ -244,6 +244,10 @@
                             opacity: 0.8;
                             // 
                             margin-bottom: 10px;
+
+                            svg {
+                                margin-right: 5px;
+                            }
                         }
 
                         .chp_button {

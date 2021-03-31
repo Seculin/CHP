@@ -12,9 +12,13 @@
 <main>
 
     <section class="chp_header chp_h_pathologies">
-        <div class="chp_container">
+        <div class="chp_container flex column main-center cross-center">
             <div class="container">
-                <h3>Pathologies</h3>
+                <h1 class="chp_light">Pathologies</h1>
+
+                <h2 class="chp_light_v2">Les différentes pathologies traitées par nos médecins</h2>
+
+                <a href="javascript:void(0)" class="chp_button chp_button_light">Pathologies et traitements <i class="fas fa-chevron-down"></i></a>
             </div>
         </div>
     </section>

@@ -11,8 +11,10 @@
     &::before {
         content: "";
         position: absolute;
-        top: 0; left: 0;
-        width: 100%; height: 100%;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
         // filter: grayscale(100%);
         //
         background-position: center !important;
@@ -23,30 +25,61 @@
 
     .chp_container {
         position: relative;
+        min-height: calc(100vh - 105px);
+        height: auto;
+    }
+
+    // Main Heading
+    h1 {
+        color: var(--chp-color-default);
+        font-family: var(--chp-font-opensans);
+        text-transform: uppercase;
+        letter-spacing: 8px;
+        font-size: 55px;
+        margin-bottom: 30px;
+    }
+
+    h2 {
+        width: 75%;
+        color: var(--chp-color-text-medium);
+        font-family: var(--chp-font-opensans-light);
+        letter-spacing: 3px;
+        line-height: 200%;
+        font-size: 22px;
+        margin-bottom: 200px;
+    }
+
+    h2.chp_light {
+        color: var(--chp-color-text-medium);
     }
 }
 
 .chp_h_medecins {
     &::before {
-        background-image: url('./assets/src/img/medecins.jpg');
+        background-image: url("./assets/src/img/medecins.jpg");
     }
 }
 
 .chp_h_cliniques {
     &::before {
-        background-image: url('./assets/src/img/cliniques.jpg');
+        background-image: url("./assets/src/img/cliniques.jpg");
         background-position: bottom !important;
+        background-size: cover !important;
     }
 }
 
 .chp_h_pathologies {
     &::before {
-        background-image: url('./assets/src/img/pathologies.jpg');
+        background-image: url("./assets/src/img/pathologies.jpg");
+        background-position: left !important;
+        filter: blur(2px) brightness(70%) !important;
     }
 }
 
 .chp_h_consignes {
     &::before {
-        background-image: url('./assets/src/img/consignes.jpg');
+        background-image: url("./assets/src/img/consignes.jpg");
+        background-position: bottom !important;
+        filter: blur(4px) !important;
     }
 }
