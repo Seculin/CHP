@@ -99,8 +99,46 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _test__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_test__WEBPACK_IMPORTED_MODULE_0__);
 // main.js
 // Webpack
- // Images
-// import '../img/banner.jpeg';
+
+jQuery(document).ready(function () {
+  // Links
+  //
+  // Links - Navigation
+  var medecins_link = jQuery("#chp_nav_medecins_link");
+  var cliniques_link = jQuery("#chp_nav_cliniques_link");
+  var navbar = jQuery("#chp_nav"); //
+  //
+  // Links - Consignes
+
+  var c_pre_link = jQuery("#c_pre_o");
+  var c_post_link = jQuery("#c_post_o"); // Dropdowns
+
+  var medecins_nav = jQuery("#chp_nav_medecins");
+  var cliniques_nav = jQuery("#chp_nav_cliniques"); // Consignes
+
+  var c_pre_content = jQuery("#c_pre_o_content");
+  var c_post_content = jQuery("#c_post_o_content");
+  medecins_link.hover(function () {
+    cliniques_nav.hide();
+    medecins_nav.show();
+  });
+  cliniques_link.hover(function () {
+    medecins_nav.hide();
+    cliniques_nav.show();
+  });
+  c_pre_link.on("click", function () {
+    c_pre_content.toggle();
+  });
+  c_post_link.on("click", function () {
+    c_post_content.toggle();
+  });
+  navbar.hover(function () {
+    return null;
+  }, function () {
+    medecins_nav.hide();
+    cliniques_nav.hide();
+  });
+});
 
 /***/ }),
 

@@ -4,4 +4,57 @@
 
 #chp_consignes {
     @extend .section_base;
+
+    .chp_consignes_container {
+        .chp_consignes_category {
+            width: 100%;
+            min-height: 140px;
+            height: auto;
+            border-top: 0.1px rgba(0, 0, 0, 0.2) solid;
+            border-bottom: 0.1px rgba(0, 0, 0, 0.2) solid;
+
+            &:last-child {
+                border-top: none;
+            }
+
+            .chp_consignes_thumb {
+                min-height: 140px;
+                height: 140px;
+                line-height: 140px;
+
+                &:hover {
+                    cursor: pointer;
+                }
+            }
+
+            h4 {
+                font-size: 18px;
+                font-family: var(--chp-font-opensans-semibold);
+                color: var(--chp-color-default);
+                text-transform: uppercase;
+                flex-grow: 1;
+            }
+
+            svg {
+                color: var(--chp-color-text-medium);
+            }
+
+            #c_pre_o_content, #c_post_o_content {
+                display: none;
+            }
+
+            .chp_consignes_content {
+                @extend .paragraph_base;
+                width: 85%;
+                padding: 10px 0 60px;
+                letter-spacing: 0.1px;
+
+                hr {
+                    margin: 50px 0;
+                    width: 70%;
+                    opacity: 0.5;
+                }
+            }
+        }
+    }
 }
