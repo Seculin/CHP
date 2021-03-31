@@ -4,4 +4,83 @@
 
 #chp_pathologies {
     @extend .section_base;
+
+    .chp_pathologies_group {
+        width: 100%;
+        min-height: 50px;
+        height: auto;
+
+        .chp_pathology_item {
+            width: 100%;
+            height: auto;
+            min-height: 80px;
+            margin-bottom: 30px;
+            box-shadow: 0 0 15px var(--chp-color-box-shadow);
+
+            &:last-child {
+                margin-bottom: 70px;
+            }
+
+            .chp_pathology {
+                width: 100%;
+                min-height: 80px;
+                height: 80px;
+                background: var(--chp-color-default);
+                //
+                display: flex;
+                flex-direction: row;
+                justify-content: flex-start;
+                align-items: center;
+                padding-right: 30px;
+    
+                &:hover {
+                    cursor: pointer;
+                }
+    
+                img {
+                    height: 100%;
+                    width: auto;
+                }
+    
+                .chp_pathology_name {
+                    flex-grow: 1;
+                    height: 80px;
+                    line-height: 80px;
+                    font-family: var(--chp-font-opensans-semibold);
+                    color: var(--chp-color-text-white);
+                    text-transform: uppercase;
+                    font-size: 18px;
+                    //
+                    margin-left: 30px;
+                    flex-grow: 1;
+                }
+    
+                .chp_pathology_icon {
+                    color: var(--chp-color-white);
+                    opacity: 0.8;
+                    transition: transform 1s;
+                }
+            }
+
+            .chp_pathology_active {
+                .chp_pathology_icon {
+                    transform: rotate(90deg);
+                }
+            }
+
+            .chp_pathology_content {
+                width: 100%;
+                height: auto;
+                background: var(--chp-color-background);
+                padding: 50px;
+                //
+                display: none;
+
+                p {
+                    font-size: 12px !important;
+                    width: 85%;
+                }
+            }
+        }
+    }
 }

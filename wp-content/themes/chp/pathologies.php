@@ -25,7 +25,117 @@
 
     <section id="chp_pathologies">
         <div class="container">
-            <h3>Les Paupiéres</h3>
+            <div class="separator"></div>
+            <h4>Les Paupiéres</h4>
+
+            <div class="chp_pathologies_group flex col main-start cross-center">
+
+                <?php $queries = new WP_Query('category_name=paupieres'); ?>
+                <?php   while ($queries->have_posts()) : $queries->the_post(); ?>
+
+                <div class="chp_pathology_item">
+                    <div class="chp_pathology">
+                        <img src="<?php echo get_the_post_thumbnail_url(); ?>" alt="pathology-thumbnail-image">
+    
+                        <div class="chp_pathology_name"><?php the_title(); ?></div>
+    
+                        <span class="chp_pathology_icon">
+                            <i class="fas fa-chevron-right"></i>
+                        </span>
+                    </div>
+
+                    <div class="chp_pathology_content">
+                        <?php the_content(); ?>
+                    </div>
+                </div>
+
+                <?php endwhile; ?>
+                <?php wp_reset_postdata(); ?>
+            </div>
+
+            <div class="separator"></div>
+            <h4>Larmoiement</h4>
+
+            <div class="chp_pathologies_group flex col main-start cross-center">
+
+                <?php $queries = new WP_Query('category_name=larmoiement'); ?>
+                <?php   while ($queries->have_posts()) : $queries->the_post(); ?>
+
+                <div class="chp_pathology_item">
+                    <div class="chp_pathology">
+                        <img src="<?php echo get_the_post_thumbnail_url(); ?>" alt="pathology-thumbnail-image">
+    
+                        <div class="chp_pathology_name"><?php the_title(); ?></div>
+    
+                        <span class="chp_pathology_icon">
+                            <i class="fas fa-chevron-right"></i>
+                        </span>
+                    </div>
+
+                    <div class="chp_pathology_content">
+                        <?php the_content(); ?>
+                    </div>
+                </div>
+
+                <?php endwhile; ?>
+                <?php wp_reset_postdata(); ?>
+            </div>
+
+            <div class="separator"></div>
+            <h4>Cavité – Prothèse oculaire</h4>
+
+            <div class="chp_pathologies_group flex col main-start cross-center">
+
+                <?php $queries = new WP_Query('category_name=cavite-prothese-oculaire'); ?>
+                <?php   while ($queries->have_posts()) : $queries->the_post(); ?>
+
+                <div class="chp_pathology_item">
+                    <div class="chp_pathology">
+                        <img src="<?php echo get_the_post_thumbnail_url(); ?>" alt="pathology-thumbnail-image">
+    
+                        <div class="chp_pathology_name"><?php the_title(); ?></div>
+    
+                        <span class="chp_pathology_icon">
+                            <i class="fas fa-chevron-right"></i>
+                        </span>
+                    </div>
+
+                    <div class="chp_pathology_content">
+                        <?php the_content(); ?>
+                    </div>
+                </div>
+
+                <?php endwhile; ?>
+                <?php wp_reset_postdata(); ?>
+            </div>
+
+            <div class="separator"></div>
+            <h4>Esthétique du regard</h4>
+
+            <div class="chp_pathologies_group flex col main-start cross-center">
+
+                <?php $queries = new WP_Query('category_name=esthetique-du-regard'); ?>
+                <?php   while ($queries->have_posts()) : $queries->the_post(); ?>
+
+                <div class="chp_pathology_item">
+                    <div class="chp_pathology">
+                        <img src="<?php echo get_the_post_thumbnail_url(); ?>" alt="pathology-thumbnail-image">
+    
+                        <div class="chp_pathology_name"><?php the_title(); ?></div>
+    
+                        <span class="chp_pathology_icon">
+                            <i class="fas fa-chevron-right"></i>
+                        </span>
+                    </div>
+
+                    <div class="chp_pathology_content">
+                        <?php the_content(); ?>
+                    </div>
+                </div>
+
+                <?php endwhile; ?>
+                <?php wp_reset_postdata(); ?>
+            </div>
         </div>
     </section>
 
