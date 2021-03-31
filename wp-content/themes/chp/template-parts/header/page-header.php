@@ -6,7 +6,7 @@
 */
 ?>
 
-<header style="background: url('<?php echo get_template_directory_uri(); ?>/assets/src/img/header-bg.jpg')">
+<header>
     <div class="chp_header_content flex column main-center cross-center">
         <div class="container">
             <h1 class="chp_header_title">Chirurgie de la paupière</h1>

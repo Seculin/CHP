@@ -1,7 +1,7 @@
 <?php
 /*
-    Template Name: Pathologies
-    CHP Theme | Pathologies
+    Template Name: Baggio
+    CHP Theme | Baggio
     Copyright: 2021, Seculin, www.seculin.com
     Wordpress v5.6.2
  */
@@ -11,9 +11,9 @@
 
 <main>
 
-    <section class="chp_header chp_h_pathologies">
+    <section class="chp_header chp_h_medecins">
         <div class="container">
-            <h3>Pathologies</h3>
+            <h3>Baggio</h3>
         </div>
     </section>
 

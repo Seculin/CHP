@@ -2,11 +2,15 @@
 
 // CHP Landing Page
 
+main {
+    margin-top: 105px !important;
+}
+
 header {
     width: 100%;
-    margin-top: 105px !important;
     min-height: calc(100vh - 105px);
     height: auto;
+    background-image: url('./assets/src/img/header-bg.jpg');
     background-position: center !important;
     background-size: cover !important;
     background-attachment: inherit !important;
