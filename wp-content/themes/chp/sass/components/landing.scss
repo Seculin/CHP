@@ -70,4 +70,29 @@ header {
 
 #chp_intro {
     @extend .section_base;
+    position: relative;
+
+    &::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        filter: opacity(50%);
+        //
+        background-image: url('./assets/src/img/intro-bg.png');
+        background-position: center !important;
+        background-size: cover !important;
+        background-attachment: inherit !important;
+        background-repeat: no-repeat !important;
+    }
+
+    .chp_intro_wrapper {
+        position: relative;
+    }
+
+    p {
+        margin-bottom: 70px;
+    }
 }

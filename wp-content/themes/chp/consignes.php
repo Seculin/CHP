@@ -18,8 +18,14 @@
 
                 <h2>Consignes générales pour pré et post opératoire</h2>
 
-                <a href="javascript:void(0)" class="chp_button chp_button_dark">En savoir plus <i class="fas fa-chevron-down"></i></a>
+                <a href="#chp_consignes" class="chp_button chp_button_dark">En savoir plus <i class="fas fa-chevron-down"></i></a>
             </div>
+        </div>
+    </section>
+
+    <section id="chp_consignes">
+        <div class="container">
+            <h3>Consignes</h3>
         </div>
     </section>
 

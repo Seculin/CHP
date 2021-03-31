@@ -18,8 +18,14 @@
 
                 <h2 class="chp_light_v2">Les différentes pathologies traitées par nos médecins</h2>
 
-                <a href="javascript:void(0)" class="chp_button chp_button_light">Pathologies et traitements <i class="fas fa-chevron-down"></i></a>
+                <a href="#chp_pathologies" class="chp_button chp_button_light">Pathologies et traitements <i class="fas fa-chevron-down"></i></a>
             </div>
+        </div>
+    </section>
+
+    <section id="chp_pathologies">
+        <div class="container">
+            <h3>Les Paupiéres</h3>
         </div>
     </section>
 

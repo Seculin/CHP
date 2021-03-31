@@ -11,12 +11,23 @@
     min-height: 70vh;
     height: auto;
     background: var(--chp-color-background);
-    padding: 100px 0;
+    padding: 140px 0;
 
     h3 {
         color: var(--chp-color-default);
         font-family: var(--chp-font-opensans);
         text-transform: uppercase;
+        margin-bottom: 80px;
+        font-size: 20px;
+        letter-spacing: 0.5px;
+    }
+
+    p {
+        font-family: var(--chp-font-opensans);
+        color: var(--chp-color-text-dark);
+        line-height: 200%;
+        letter-spacing: 2px;
+        font-size: 15px;
     }
 }
 
@@ -26,6 +37,14 @@
 
 .chp_light_v2 {
     color: var(--chp-color-text-white-light) !important;
+}
+
+.color-default {
+    color: var(--chp-color-default) !important;
+}
+
+.bold {
+    font-weight: bold !important;
 }
 
 .chp_button {
