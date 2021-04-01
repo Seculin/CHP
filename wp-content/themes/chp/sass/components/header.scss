@@ -58,6 +58,7 @@
 .chp_h_medecins {
     &::before {
         background-image: url("./assets/src/img/medecins.jpg");
+        filter: contrast(0.9) !important;
     }
 }
 

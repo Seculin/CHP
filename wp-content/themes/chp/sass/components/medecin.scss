@@ -1,0 +1,63 @@
+@import "../common.scss";
+
+// CHP Clinique
+
+.chp_cliniques {
+    .chp_medecins_image {
+        width: 600px !important;
+    }
+
+    .chp_baggio_image {
+        width: 480px !important;
+    }
+
+    .chp_button_rdv {
+        margin-left: 60px;
+        color: var(--chp-color-default) !important;
+
+        &:hover {
+            color: var(--chp-color-default-dark) !important;
+        }
+    }
+}
+
+.chp_medecine_content {
+    @extend .section_base;
+
+    .chp_medecin_data {
+        border-top: 0.1px rgba(0, 0, 0, 0.2) solid;
+        margin-bottom: 80px;
+
+        .chp_medecin_data_item {
+            width: 100%;
+            height: auto;
+            padding: 30px 0;
+            border-bottom: 0.1px rgba(0, 0, 0, 0.2) solid;
+            //
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-start;
+            align-items: flex-start;
+
+            .chp_medecin_di_1 {
+                font-family: var(--chp-font-opensans-semibold);
+                color: var(--chp-color-default);
+                text-transform: uppercase;
+                font-size: 14px !important;
+                line-height: 200%;
+                letter-spacing: 0.3px;
+                flex: 1;
+            }
+
+            .chp_medecin_di_2 {
+                font-family: var(--chp-font-opensans-semibold);
+                color: var(--chp-color-text-dark);
+                min-height: 28px;
+                font-size: 12px !important;
+                line-height: 28px;
+                letter-spacing: 0.3px;
+                flex: 1;
+            }
+        }
+    }
+}
