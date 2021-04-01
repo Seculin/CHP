@@ -11,6 +11,11 @@
 
 <main>
 
+    <?php
+    if ( have_posts() ) {
+    while ( have_posts() ) : the_post();
+    ?>
+
     <section class="chp_header chp_h_cliniques">
         <div class="chp_container chp_cliniques flex column main-center cross-center">
         <div class="container">
@@ -26,5 +31,28 @@
             </div>
         </div>
     </section>
+
+    <section id="chp_charles" class="chp_clinique_content">
+        <div class="container">
+            <div class="flex col main-start cross-center">
+                <div class="chp_clinique_data">
+
+                </div>
+
+                <div class="chp_clinique_presentation">
+                    <div class="separator"></div>
+                    <h4>Présentation</h4>
+
+                    <div class="chp_clinique_pres_content">
+                        <?php the_content() ?>
+                    </div>
+
+                    <a href="https://www.cliniquesaintcharles.fr/" target="_blank" class="chp_button chp_button_dark">En savoir plus <i class="fas fa-chevron-down"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <?php endwhile; } ?>
 
 <?php get_footer(); ?>
