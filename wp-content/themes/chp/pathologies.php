@@ -11,17 +11,24 @@
 
 <main>
 
+    <?php
+    if ( have_posts() ) {
+    while ( have_posts() ) : the_post();
+    ?>
+
     <section class="chp_header chp_h_pathologies">
         <div class="chp_container flex column main-center cross-center">
             <div class="container">
-                <h1 class="chp_light">Pathologies</h1>
+                <h1 class="chp_light"><?php the_title() ?></h1>
 
-                <h2 class="chp_light_v2">Les différentes pathologies traitées par nos médecins</h2>
+                <h2 class="chp_light_v2"><?php the_content() ?></h2>
 
                 <a href="#chp_pathologies" class="chp_button chp_button_light">Pathologies et traitements <i class="fas fa-chevron-down"></i></a>
             </div>
         </div>
     </section>
+
+    <?php endwhile; } ?>
 
     <section id="chp_pathologies">
         <div class="container">
