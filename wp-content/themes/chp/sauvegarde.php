@@ -36,7 +36,36 @@
         <div class="container">
             <div class="flex col main-start cross-center">
                 <div class="chp_clinique_data">
-
+                    <div class="flex row main-start cross-start">
+                        <div class="chp_clinique_data_col flex col main-start cross-start">
+                            <div class="chp_clinique_data_item flex row main-center cross-center">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <span>480 Av. Ben Gourion - Lyon 9ème</span>
+                            </div>
+                            <div class="chp_clinique_data_item flex row main-center cross-center">
+                                <i class="fas fa-envelope"></i>
+                                <span>CSV-contact@capio.fr</span>
+                            </div>
+                            <div class="chp_clinique_data_item flex row main-center cross-center">
+                                <i class="fas fa-globe-americas"></i>
+                                <span>www.clinique-de-la-sauvegarde-lyon.ramsaygds.fr</span>
+                            </div>
+                        </div>
+                        <div class="chp_clinique_data_col flex col main-start cross-start">
+                            <div class="chp_clinique_data_item flex row main-center cross-center">
+                                <i class="fas fa-phone-alt"></i>
+                                <span>08 26 10 69 69</span>
+                            </div>
+                            <div class="chp_clinique_data_item flex row main-center cross-center">
+                                <i class="fas fa-phone-alt"></i>
+                                <span>04 78 64 06 50 (anesthétistes)</span>
+                            </div>
+                            <div class="chp_clinique_data_item flex row main-center cross-center">
+                                <i class="fas fa-fax"></i>
+                                <span>04 72 17 26 17</span>
+                            </div>
+                        </div>
+                    </div>
                 </div>
 
                 <div class="chp_clinique_presentation">

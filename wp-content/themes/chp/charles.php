@@ -36,7 +36,32 @@
         <div class="container">
             <div class="flex col main-start cross-center">
                 <div class="chp_clinique_data">
-
+                    <div class="flex row main-start cross-start">
+                        <div class="chp_clinique_data_col flex col main-start cross-start">
+                            <div class="chp_clinique_data_item flex row main-center cross-center">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <span>25 Rue de Flesselles, 69283 Lyon, Cedex 1</span>
+                            </div>
+                            <div class="chp_clinique_data_item flex row main-center cross-center">
+                                <i class="fas fa-envelope"></i>
+                                <span>contact@cliniquesaintcharles.fr</span>
+                            </div>
+                            <div class="chp_clinique_data_item flex row main-center cross-center">
+                                <i class="fas fa-globe-americas"></i>
+                                <span>www.cliniquesaintcharles.fr</span>
+                            </div>
+                        </div>
+                        <div class="chp_clinique_data_col flex col main-start cross-start">
+                            <div class="chp_clinique_data_item flex row main-center cross-center">
+                                <i class="fas fa-phone-alt"></i>
+                                <span>04 72 10 26 26</span>
+                            </div>
+                            <div class="chp_clinique_data_item flex row main-center cross-center">
+                                <i class="fas fa-fax"></i>
+                                <span>04 72 10 26 36</span>
+                            </div>
+                        </div>
+                    </div>
                 </div>
 
                 <div class="chp_clinique_presentation">
