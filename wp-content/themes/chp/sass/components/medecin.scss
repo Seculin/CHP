@@ -2,6 +2,14 @@
 
 // CHP Clinique
 
+.chp_h_medecins {
+    min-height: 650px;
+
+    .chp_container {
+        min-height: 650px;
+    }
+}
+
 .chp_cliniques {
     .chp_medecins_image {
         width: 600px !important;

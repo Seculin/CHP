@@ -9,7 +9,7 @@
 // Section Base
 .section_base {
     width: 100%;
-    min-height: 50vh;
+    min-height: 500px;
     height: auto;
     background: var(--chp-color-background);
     padding: 120px 0;
@@ -45,6 +45,30 @@
     font-size: 13px;
 }
 
+.section_bg_base {
+    position: relative;
+
+    &::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        //
+        background-position: center !important;
+        background-size: cover !important;
+        background-attachment: inherit !important;
+        background-repeat: no-repeat !important;
+    }
+
+    .chp_bg_wrapper {
+        position: relative;
+        min-height: 360px !important;
+        height: auto;
+    }
+}
+
 .separator {
     min-height: 1px;
     background: var(--chp-color-border);
@@ -58,10 +82,16 @@
 
 .chp_light {
     color: var(--chp-color-text-white) !important;
+    p {
+        color: var(--chp-color-text-white) !important;
+    }
 }
 
 .chp_light_v2 {
     color: var(--chp-color-text-white-light) !important;
+    p {
+        color: var(--chp-color-text-white-light) !important;
+    }
 }
 
 .color-default {

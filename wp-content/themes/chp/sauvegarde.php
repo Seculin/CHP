@@ -23,11 +23,11 @@
                     <img src="<?php echo get_template_directory_uri(); ?>/assets/src/img/clinic1.jpg" class="nav_img" alt="clinic-photo-thumbnail">
                 </div>
 
-                <h1><?php the_title() ?></h1>
+                <h1 class="chp_light"><?php the_title() ?></h1>
 
-                <h2>La clinique de la Sauvegarde est un établissement conventionné certifié par la Haute Autorité de Santé</h2>
+                <h2 class="chp_light_v2">La clinique de la Sauvegarde est un établissement conventionné certifié par la Haute Autorité de Santé</h2>
 
-                <a href="#chp_sauvegarde" class="chp_button chp_button_dark">En savoir plus <i class="fas fa-chevron-down"></i></a>
+                <a href="#chp_sauvegarde" class="chp_button chp_button_light">En savoir plus <i class="fas fa-chevron-down"></i></a>
             </div>
         </div>
     </section>

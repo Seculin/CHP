@@ -19,11 +19,11 @@
     <section class="chp_header chp_h_consignes">
         <div class="chp_container flex column main-center cross-center">
             <div class="container">
-                <h1><?php the_title() ?></h1>
+                <h1 class="chp_light"><?php the_title() ?></h1>
 
-                <h2><?php the_content() ?></h2>
+                <h2 class="chp_light_v2"><?php the_content() ?></h2>
 
-                <a href="#chp_consignes" class="chp_button chp_button_dark">En savoir plus <i class="fas fa-chevron-down"></i></a>
+                <a href="#chp_consignes" class="chp_button chp_button_light">En savoir plus <i class="fas fa-chevron-down"></i></a>
             </div>
         </div>
     </section>

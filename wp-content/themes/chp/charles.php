@@ -23,11 +23,11 @@
                     <img src="<?php echo get_template_directory_uri(); ?>/assets/src/img/clinic2.jpg" class="nav_img" alt="clinic-photo-thumbnail">
                 </div>
 
-                <h1>Clinique Saint-Charles</h1>
+                <h1 class="chp_light">Clinique Saint-Charles</h1>
 
-                <h2>Créé en 1909 par les Soeurs de Saint Charles de Lyon, c’est un établissement certifié par la Haute Autorité de Santé</h2>
+                <h2 class="chp_light_v2">Créé en 1909 par les Soeurs de Saint Charles de Lyon, c’est un établissement certifié par la Haute Autorité de Santé</h2>
 
-                <a href="#chp_charles" class="chp_button chp_button_dark">En savoir plus <i class="fas fa-chevron-down"></i></a>
+                <a href="#chp_charles" class="chp_button chp_button_light">En savoir plus <i class="fas fa-chevron-down"></i></a>
             </div>
         </div>
     </section>

@@ -70,29 +70,93 @@ header {
 
 #chp_intro {
     @extend .section_base;
-    position: relative;
+    @extend .section_bg_base;
 
     &::before {
-        content: "";
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
         filter: opacity(50%);
         //
         background-image: url('./assets/src/img/intro-bg.png');
         background-position: center !important;
         background-size: cover !important;
-        background-attachment: inherit !important;
-        background-repeat: no-repeat !important;
-    }
-
-    .chp_intro_wrapper {
-        position: relative;
     }
 
     p {
         margin-bottom: 70px;
+    }
+}
+
+#chp_intro_consignes {
+    @extend .section_base;
+    @extend .section_bg_base;
+
+    &::before {
+        filter: contrast(80%) brightness(50%);
+        //
+        background-image: url('./assets/src/img/intro_consignes.jpg');
+        background-position: bottom !important;
+        background-size: cover !important;
+    }
+}
+
+#chp_intro_pathologies {
+    @extend .section_base;
+    @extend .section_bg_base;
+
+    &::before {
+        filter: contrast(80%) brightness(80%);
+        //
+        background-image: url('./assets/src/img/intro_pathologies_2.jpg');
+        background-position: top !important;
+        background-size: cover !important;
+    }
+}
+
+#chp_intro_medecins {
+    @extend .section_base;
+    background: var(--chp-color-background);
+
+    .chp_intro_medecins_content {
+        .chp_intro_medecin {
+            flex: 1;
+
+            img {
+                width: 170px;
+                height: 170px;
+                border-radius: 80px;
+                margin-bottom: 40px;
+            }
+
+            .chp_intro_medecin_name {
+                font-family: var(--chp-font-opensans-semibold);
+                color: var(--chp-color-default);
+                text-transform: uppercase;
+                font-size: 24px;
+                letter-spacing: 0.5px;
+                // 
+                margin-bottom: 20px;
+            }
+
+            .chp_intro_medecin_role {
+                font-family: var(--chp-font-opensans-semibold);
+                color: var(--chp-color-text-dark);
+                text-transform: uppercase;
+                font-size: 16px;
+                // 
+                margin-bottom: 20px;
+            }
+
+            .chp_intro_medecin_desc {
+                font-family: var(--chp-font-opensans);
+                color: var(--chp-color-text-dark);
+                font-size: 13px;
+                letter-spacing: 1px;
+                line-height: 200%;
+                width: 40%;
+                text-align: center;
+                margin-left: auto;
+                margin-right: auto;
+                margin-bottom: 30px;
+            }
+        }
     }
 }

@@ -20,7 +20,7 @@
 
                 <h1>Dr. Eric Baggio</h1>
 
-                <h2>Ophtalmologiste spécialisé en chirurgie orbito-lacrymo-palpébrale (orbite, voie lacrymale, et paupière)</h2>
+                <h2 class="chp_darker">Ophtalmologiste spécialisé en chirurgie orbito-lacrymo-palpébrale (orbite, voie lacrymale, et paupière)</h2>
 
                 <a href="#chp_baggio" class="chp_button chp_button_dark">En savoir plus <i class="fas fa-chevron-down"></i></a>
 
