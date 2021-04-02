@@ -4,13 +4,13 @@
 
 .chp_h_cliniques {
     min-height: calc(100vh - 95px);
-    @include media(">=tablet") {
+    @include media(">tablet") {
         min-height: 900px;
     }
 
     .chp_container {
         min-height: calc(100vh - 95px);
-        @include media(">=tablet") {
+        @include media(">tablet") {
             min-height: 900px;
         }
     }
@@ -20,7 +20,7 @@
     .container {
         text-align: center !important;
         overflow: visible;
-        @include media(">=tablet") {
+        @include media(">tablet") {
             text-align: left !important;
         }
     }
@@ -36,6 +36,10 @@
         overflow: visible;
 
         @include media(">=tablet") {
+            margin-bottom: 90px;
+        }
+
+        @include media(">tablet") {
             width: 800px;
             min-height: 140px;
             height: 140px;
@@ -63,8 +67,11 @@
 
         @include media(">=tablet") {
             font-size: 45px;
-            text-align: left;
             margin-bottom: 40px;
+        }
+
+        @include media(">tablet") {
+            text-align: left;
         }
     }
 
@@ -81,11 +88,20 @@
         }
 
         @include media(">=tablet") {
-            width: 45%;
-            text-align: left;
+            text-align: center;
+            width: 60%;
+            margin-left: auto;
+            margin-right: auto;
             margin-bottom: 100px;
             line-height: 250%;
             font-size: 14px;
+        }
+
+        @include media(">tablet") {
+            width: 45%;
+            text-align: left;
+            margin-left: 0;
+            margin-right: 0;
         }
     }
 }
@@ -99,6 +115,10 @@
         font-size: 12px !important;
         letter-spacing: 0.5px;
         margin-bottom: 20px;
+
+        @include media(">=tablet") {
+            margin-bottom: 60px;
+        }
 
         @include media(">tablet") {
             margin-bottom: 60px;

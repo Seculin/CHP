@@ -15,10 +15,13 @@
         font-family: var(--chp-font-opensans);
         letter-spacing: 8px;
         font-size: 55px;
-        margin-bottom: 30px;
         padding-left: 0rem;
         padding-right: 0rem;
         min-height: 400px;
+    }
+
+    @include media(">tablet") {
+        // margin-bottom: 30px;
     }
 
     @include media(">tablet") {
@@ -45,6 +48,14 @@
         min-height: calc(100vh - 105px);
         min-height: 500px;
         height: auto;
+
+        @include media(">=tablet") {
+            padding: 0 2rem !important;
+        }
+
+        @include media(">tablet") {
+            padding: 0 !important;
+        }
     }
 
     // Main Heading
@@ -115,6 +126,20 @@
         background-position: left !important;
         filter: blur(2px) brightness(70%) !important;
     }
+
+    @include media(">=tablet") {
+        min-height: 700px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+
+    @include media(">tablet") {
+        min-height: 500px;
+        display: block;
+        flex-direction: unset;
+        align-items: unset;
+    }
 }
 
 .chp_h_consignes {
@@ -122,5 +147,19 @@
         background-image: url("./assets/src/img/consignes.jpg");
         background-position: bottom !important;
         filter: blur(2px) brightness(40%) !important;
+    }
+
+    @include media(">=tablet") {
+        min-height: 700px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+
+    @include media(">tablet") {
+        min-height: 500px;
+        display: block;
+        flex-direction: unset;
+        align-items: unset;
     }
 }

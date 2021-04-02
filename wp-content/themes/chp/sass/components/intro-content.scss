@@ -30,10 +30,15 @@
     }
 
     @include media(">=tablet") {
-        width: 55%;
-        font-family: var(--chp-font-opensans-light) !important;
+        width: 75%;
+        font-family: var(--chp-font-opensans) !important;
         font-size: 20px !important;
         line-height: 200% !important;
         margin-bottom: 80px !important;
+    }
+
+    @include media(">tablet") {
+        width: 55%;
+        font-family: var(--chp-font-opensans-light) !important;
     }
 }

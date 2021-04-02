@@ -10,7 +10,7 @@
     box-shadow: 0 0 15px var(--chp-color-box-shadow);
     z-index: 9999 !important;
 
-    @include media(">=tablet") {
+    @include media(">tablet") {
         min-height: 105px;
     }
 
@@ -27,14 +27,14 @@
             font-size: 10px;
         }
         //
-        @include media(">=tablet") {
+        @include media(">tablet") {
             font-size: 12px;
             height: 40px;
         }
 
         .nav_1_item {
 
-            @include media(">=tablet") {
+            @include media(">tablet") {
                 margin-bottom: 0px;
                 margin-left: 60px;
             }

@@ -31,7 +31,7 @@
                         <div class="chp_ndc_clinique_info flex col main-center cross-start">
                             <span class="chp_ndc_name">Clinique de la Sauvegarde</span>
 
-                            <span class="chp_ndc_address"><i class="fas fa-map-marker-alt"></i> 480 Avenue Ben Gourion, 69009 Lyon</span>
+                            <span class="chp_ndc_address"><i class="fas fa-map-marker-alt"></i> 480 Av. Ben Gourion, 69009 Lyon</span>
 
                             <a href="<?php echo site_url( '/clinique-de-la-sauvegarde' ) ?>" class="chp_button">En savoir plus <i class="fas fa-chevron-down"></i></a>
                         </div>

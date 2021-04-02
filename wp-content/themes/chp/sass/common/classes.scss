@@ -76,7 +76,7 @@
         font-size: 12px;
     }
 
-    @include media(">=tablet") {
+    @include media(">tablet") {
         font-size: 13px;
     }
 }
