@@ -9,7 +9,7 @@
 <nav id="chp_nav" class="flex col">
 
         <div id="chp_nav_1" class="flex row main-start cross-center">
-            <div class="container flex main-end">
+            <div class="container flex main-end landscape-only">
                 <div class="nav_1_item">
                     <i class="fas fa-map-marker-alt"></i>
                     <span>50 Cours Franklin Roosevelt, 69006 Lyon, France</span>
@@ -30,24 +30,78 @@
                     <span>(+33) 472 83 49 19</span>
                 </div>
             </div>
+
+            <div class="container portrait-only">
+                <div id="chp_nav_1_mobile" class="flex main-end cross-center">
+                    <div class="nav_1_item nav_1_thumb_item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <span>50 Cours Franklin Roosevelt, 69006 Lyon, France</span>
+                    </div>
+    
+                    <div id="chp_mobile_nav_1_button">
+                        <i class="fas fa-angle-right mobile_chevron"></i>
+                    </div>
+                </div>
+
+                <div id="chp_nav_1_mobile_content">
+                    <div class="nav_1_item">
+                        <i class="fas fa-envelope"></i>
+                        <span>contact@chirurgie-paupiere-lyon.fr</span>
+                    </div>
+
+                    <div class="nav_1_item">
+                        <i class="fas fa-fax"></i>
+                        <span>(+33) 472 83 49 19</span>
+                    </div>
+
+                    <div class="nav_1_item">
+                        <i class="fas fa-phone-alt"></i>
+                        <span>(+33) 472 83 49 19</span>
+                    </div>
+                </div>
+            </div>
         </div>
 
         <div id="chp_nav_2" class="flex row main-start cross-center">
             <div class="container">
-                <div class="flex row main-start cross-center">
+                <div class="flex row main-start cross-center landscape-only">
                     <div id="chp_nav_site_logo">
-                        <img src="<?php echo get_template_directory_uri(); ?>/assets/src/img/logo_dark.png" alt="site-logo">
+                        <a href="<?php echo site_url( '/' ) ?>">
+                            <img src="<?php echo get_template_directory_uri(); ?>/assets/src/img/logo_dark.png" alt="site-logo">
 
-                        <span class="chp_nav_site_title">Chirurgie de la paupière</span>
+                            <span class="chp_nav_site_title">Chirurgie de la paupière</span>
+                        </a>
                     </div>
 
                     <div id="chp_nav_wrapper">
                         <div class="chp_nav_items flex row main-end">
-                            <div class="chp_nav_item" id="chp_nav_medecins_link">Mèdecins <i class="fas fa-chevron-down"></i></div>
-                            <div class="chp_nav_item" id="chp_nav_cliniques_link">Cliniques <i class="fas fa-chevron-down"></i></div>
-                            <div class="chp_nav_item">Pathologies</div>
-                            <div class="chp_nav_item">Consignes Péri-Opèratoires</div>
+                            <div class="chp_nav_item" id="chp_nav_medecins_link">
+                                Mèdecins <i class="fas fa-chevron-down"></i>
+                            </div>
+                            <div class="chp_nav_item" id="chp_nav_cliniques_link">
+                                Cliniques <i class="fas fa-chevron-down"></i>
+                            </div>
+                            <div class="chp_nav_item">
+                                <a href="<?php echo site_url( '/pathologies' ) ?>">Pathologies</a>
+                            </div>
+                            <div class="chp_nav_item">
+                                <a href="<?php echo site_url( '/consignes-peri-operatoires' ) ?>">Consignes Péri-Opèratoires</a>
+                            </div>
                         </div>
+                    </div>
+                </div>
+
+                <div class="flex row main-start cross-center portrait-only">
+                    <div id="chp_nav_site_logo">
+                        <a href="<?php echo site_url( '/' ) ?>">
+                            <img src="<?php echo get_template_directory_uri(); ?>/assets/src/img/logo_dark.png" alt="site-logo">
+
+                            <!-- <span class="chp_nav_site_title">Chirurgie de la paupière</span> -->
+                        </a>
+                    </div>
+
+                    <div id="chp_mobile_nav_button">
+                        <i class="fas fa-bars"></i>
                     </div>
                 </div>
             </div>
@@ -66,7 +120,7 @@
 
                     <span class="chp_nd_medecin_desc">Titulaire du diplôme inter-universitaire de chirurgie orbito-lacrymo-palpébrale</span>
 
-                    <a href="javascript:void(0)" class="chp_button">En savoir plus <i class="fas fa-chevron-down"></i></a>
+                    <a href="<?php echo site_url( '/dr-eric-baggio' ) ?>" class="chp_button">En savoir plus <i class="fas fa-chevron-down"></i></a>
                 </div>
 
                 <div class="chp_nd_medecin">
@@ -78,7 +132,7 @@
 
                     <span class="chp_nd_medecin_desc">Titulaire du diplôme inter-universitaire de chirurgie orbito-lacrymo-palpébrale</span>
 
-                    <a href="javascript:void(0)" class="chp_button">En savoir plus <i class="fas fa-chevron-down"></i></a>
+                    <a href="<?php echo site_url( '/dr-jeremy-barbier' ) ?>" class="chp_button">En savoir plus <i class="fas fa-chevron-down"></i></a>
                 </div>
             </div>
         </div>
@@ -101,7 +155,7 @@
 
                             <span class="chp_ndc_address"><i class="fas fa-map-marker-alt"></i> 480 Avenue Ben Gourion, 69009 Lyon</span>
 
-                            <a href="javascript:void(0)" class="chp_button">En savoir plus <i class="fas fa-chevron-down"></i></a>
+                            <a href="<?php echo site_url( '/clinique-de-la-sauvegarde' ) ?>" class="chp_button">En savoir plus <i class="fas fa-chevron-down"></i></a>
                         </div>
                     </div>
 
@@ -113,7 +167,7 @@
 
                             <span class="chp_ndc_address"><i class="fas fa-map-marker-alt"></i> 25 Rue de Flesselles, 69001 Lyon</span>
 
-                            <a href="javascript:void(0)" class="chp_button">En savoir plus <i class="fas fa-chevron-down"></i></a>
+                            <a href="<?php echo site_url( '/clinique-saint-charles' ) ?>" class="chp_button">En savoir plus <i class="fas fa-chevron-down"></i></a>
                         </div>
                     </div>
                 </div>
@@ -131,7 +185,7 @@
 
                             <span class="chp_ndc_address"><i class="fas fa-map-marker-alt"></i> 50 Cours Franklin Roosevelt, 69006 Lyon</span>
 
-                            <a href="javascript:void(0)" class="chp_button">En savoir plus <i class="fas fa-chevron-down"></i></a>
+                            <a href="https://www.centre-kleber.fr/" target="_blank" class="chp_button">En savoir plus <i class="fas fa-chevron-down"></i></a>
                         </div>
                     </div>
                 </div>

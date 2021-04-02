@@ -10,6 +10,15 @@
 
 </main>
 
+<footer id="chp_footer" class="flex row main-start cross-center">
+    <div class="container">
+        <div class="flex row main-start cross-center">
+            <span><strong>© CHIRURGIE DE LA PAUPIÈRE 2021</strong> | SITE WEB PAR SECULIN <img src="<?php echo get_template_directory_uri(); ?>/assets/src/img/seculin.png" alt="seculin-logo"></span>
+            <img src="<?php echo get_template_directory_uri(); ?>/assets/src/img/logo_light.png" class="chp_footer_logo" alt="site-logo-footer">
+        </div>
+    </div>
+</footer>
+
 <!--  Smooth Scrolling  -->
 
 <script>

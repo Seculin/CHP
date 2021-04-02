@@ -29,7 +29,15 @@ Text Domain: CHP
 // ------------------------------------------------------------------------------
 
 @import './sass/components/navigation.scss';
+@import './sass/components/mobile-navigation.scss';
 @import './sass/components/landing.scss';
+@import './sass/components/header.scss';
+@import './sass/components/medecin.scss';
+@import './sass/components/clinique.scss';
+@import './sass/components/pathologies.scss';
+@import './sass/components/consignes.scss';
+@import './sass/components/footer.scss';
+@import './sass/components/intro-content.scss';
 
 //------------------------------------------------------------------------------
 
@@ -163,6 +171,10 @@ body {
 html, body {
   overflow-x: hidden;
   overflow-y: hidden;
+}
+
+body {
+  overflow-y: scroll;
 }
 
 .container-fluid,

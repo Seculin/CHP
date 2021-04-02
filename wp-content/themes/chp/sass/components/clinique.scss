@@ -1,0 +1,183 @@
+@import "../common.scss";
+
+// CHP Clinique
+
+.chp_h_cliniques {
+    min-height: calc(100vh - 95px);
+    @include media(">tablet") {
+        min-height: 900px;
+    }
+
+    .chp_container {
+        min-height: calc(100vh - 95px);
+        @include media(">tablet") {
+            min-height: 900px;
+        }
+    }
+}
+
+.chp_cliniques {
+    .container {
+        text-align: center !important;
+        overflow: visible;
+        @include media(">tablet") {
+            text-align: left !important;
+        }
+    }
+
+    .chp_cliniques_image {
+        width: 100%;
+        min-height: 100px;
+        height: 100px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 50px;
+        overflow: visible;
+
+        @include media(">=tablet") {
+            margin-bottom: 90px;
+        }
+
+        @include media(">tablet") {
+            width: 800px;
+            min-height: 140px;
+            height: 140px;
+            margin-bottom: 60px;
+        }
+
+        img {
+            width: 100px !important;
+            height: 100px !important;
+            border-radius: 70px;
+            border: 2px var(--chp-color-white) solid;
+
+            @include media(">=tablet") {
+                width: 140px !important;
+                height: 140px !important;
+                border: 4px var(--chp-color-white) solid;
+            }
+        }
+    }
+
+    h1 {
+        font-size: 24px;
+        text-align: center;
+        margin-bottom: 20px;
+
+        @include media(">=tablet") {
+            font-size: 45px;
+            margin-bottom: 40px;
+        }
+
+        @include media(">tablet") {
+            text-align: left;
+        }
+    }
+
+    h2 {
+        color: var(--chp-color-text-dark);
+        width: 100%;
+        text-align: center;
+        margin-bottom: 40px;
+        line-height: 200%;
+        font-size: 10px;
+
+        @include media(">=sm2") {
+            font-size: 12px;
+        }
+
+        @include media(">=tablet") {
+            text-align: center;
+            width: 60%;
+            margin-left: auto;
+            margin-right: auto;
+            margin-bottom: 100px;
+            line-height: 250%;
+            font-size: 14px;
+        }
+
+        @include media(">tablet") {
+            width: 45%;
+            text-align: left;
+            margin-left: 0;
+            margin-right: 0;
+        }
+    }
+}
+
+.chp_clinique_content {
+    @extend .section_base;
+
+    .chp_clinique_data {
+        width: 100%;
+        @extend .paragraph_base;
+        font-size: 12px !important;
+        letter-spacing: 0.5px;
+        margin-bottom: 20px;
+
+        @include media(">=tablet") {
+            margin-bottom: 60px;
+        }
+
+        @include media(">tablet") {
+            margin-bottom: 60px;
+        }
+
+        .chp_clinique_data_col {
+            flex: 1;
+        }
+
+        .chp_clinique_data_item {
+            height: 20px;
+            line-height: 20px;
+            margin-bottom: 30px;
+
+            svg {
+                font-size: 20px !important;
+                color: var(--chp-color-default);
+                margin-right: 15px;
+            }
+
+            &:last-child {
+                margin-bottom: 30px;
+            }
+
+            span {
+                display: inline-block;
+                height: 20px !important;
+                line-height: 20px;
+            }
+        }
+    }
+
+    .chp_clinique_presentation {
+        width: 100%;
+
+        .chp_clinique_pres_content {
+            margin-bottom: 60px;
+
+            @include media(">=tablet") {
+                margin-bottom: 80px;
+            }
+            
+            p {
+                font-size: 10px !important;
+                width: 100%;
+
+                @include media(">=sm2") {
+                    font-size: 12px !important;
+                }
+
+                @include media(">=tablet") {
+                    width: 85%;     
+                    font-size: 12px !important;
+                }
+            }
+        }
+
+        .chp_button_dark {
+            font-size: 14px !important;
+        }
+    }
+}

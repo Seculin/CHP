@@ -1,0 +1,165 @@
+@import "../common.scss";
+
+// CHP Sub-pages Header
+
+.chp_header {
+    width: 100%;
+    min-height: calc(100vh - 105px);
+    min-height: 500px;
+    height: auto;
+    position: relative;
+    padding-left: 1rem;
+    padding-right: 1rem;
+
+    @include media(">=tablet") {
+        font-family: var(--chp-font-opensans);
+        letter-spacing: 8px;
+        font-size: 55px;
+        padding-left: 0rem;
+        padding-right: 0rem;
+        min-height: 400px;
+    }
+
+    @include media(">tablet") {
+        // margin-bottom: 30px;
+    }
+
+    @include media(">tablet") {
+        min-height: 500px;
+    }
+
+    &::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        // filter: grayscale(100%);
+        //
+        background-position: center !important;
+        background-size: cover !important;
+        background-attachment: inherit !important;
+        background-repeat: no-repeat !important;
+    }
+
+    .chp_container {
+        position: relative;
+        min-height: calc(100vh - 105px);
+        min-height: 500px;
+        height: auto;
+
+        @include media(">=tablet") {
+            padding: 0 2rem !important;
+        }
+
+        @include media(">tablet") {
+            padding: 0 !important;
+        }
+    }
+
+    // Main Heading
+    h1 {
+        color: var(--chp-color-default);
+        font-family: var(--chp-font-opensans);
+        text-transform: uppercase;
+        letter-spacing: 3px;
+        font-size: 24px;
+        line-height: 180%;
+        margin-bottom: 40px;
+
+        @include media(">=tablet") {
+            font-family: var(--chp-font-opensans);
+            letter-spacing: 8px;
+            font-size: 55px;
+            margin-bottom: 30px;
+        }
+    }
+
+    // Subheading
+    h2 {
+        width: 100%;
+        color: #4f5050;
+        font-family: var(--chp-font-opensans);
+        letter-spacing: 1px;
+        line-height: 200%;
+        font-size: 12px;
+        margin-bottom: 60px;
+
+        @include media(">=tablet") {
+            width: 60%;
+            letter-spacing: 3px;
+            line-height: 250%;
+            font-size: 14px;
+            margin-bottom: 80px;
+        }
+    }
+
+    .chp_darker {
+        color: #4f5050 !important;
+    }
+
+    h2.chp_light {
+        color: var(--chp-color-text-medium);
+    }
+}
+
+.chp_h_medecins {
+    &::before {
+        background-image: url("./assets/src/img/medecins.jpg");
+        filter: blur(2px) contrast(0.9) !important;
+    }
+}
+
+.chp_h_cliniques {
+    &::before {
+        background-image: url("./assets/src/img/cliniques.jpg");
+        background-position: bottom !important;
+        background-size: cover !important;
+        filter: blur(2px) brightness(60%) contrast(0.9) !important;
+    }
+}
+
+.chp_h_pathologies {
+    &::before {
+        background-image: url("./assets/src/img/pathologies.jpg");
+        background-position: left !important;
+        filter: blur(2px) brightness(70%) !important;
+    }
+
+    @include media(">=tablet") {
+        min-height: 700px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+
+    @include media(">tablet") {
+        min-height: 500px;
+        display: block;
+        flex-direction: unset;
+        align-items: unset;
+    }
+}
+
+.chp_h_consignes {
+    &::before {
+        background-image: url("./assets/src/img/consignes.jpg");
+        background-position: bottom !important;
+        filter: blur(2px) brightness(40%) !important;
+    }
+
+    @include media(">=tablet") {
+        min-height: 700px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+
+    @include media(">tablet") {
+        min-height: 500px;
+        display: block;
+        flex-direction: unset;
+        align-items: unset;
+    }
+}

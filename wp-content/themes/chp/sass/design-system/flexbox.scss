@@ -25,6 +25,14 @@
     display: inline-flex !important;
 }
 
+.row-to-col {
+    flex-direction: column !important;
+
+    @include media(">=tablet") {
+        flex-direction: row !important;
+    }
+}
+
 @media (orientation: landscape) {
     /* col-to-row on landscape */
     .flex-landscape {

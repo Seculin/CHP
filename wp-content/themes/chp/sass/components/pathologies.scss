@@ -1,0 +1,140 @@
+@import '../common.scss';
+
+// CHP Pathologies
+
+#chp_pathologies {
+    @extend .section_base;
+
+    .chp_pathologies_group {
+        width: 100%;
+        min-height: 50px;
+        height: auto;
+
+        .chp_pathology_item {
+            width: 100%;
+            height: auto;
+            min-height: 40px;
+            margin-bottom: 15px;
+            box-shadow: 0 0 15px var(--chp-color-box-shadow);
+            transition: box-shadow 1s;
+
+            @include media(">=tablet") {
+                min-height: 80px;
+                margin-bottom: 30px;
+            }
+
+            &:hover {
+                box-shadow: 0 0 15px var(--chp-color-text-dark);
+                transition: box-shadow 1s;
+            }
+
+            &:last-child {
+                margin-bottom: 70px;
+            }
+
+            .chp_pathology {
+                width: 100%;
+                min-height: 40px;
+                height: 40px;
+                background: var(--chp-color-default);
+                //
+                display: flex;
+                flex-direction: row;
+                justify-content: flex-start;
+                align-items: center;
+                padding-right: 10px;
+
+                @include media(">=tablet") {
+                    min-height: 80px;
+                    height: 80px;
+                    padding-right: 30px;
+                }
+    
+                &:hover {
+                    cursor: pointer;
+                }
+    
+                img {
+                    height: 100%;
+                    width: auto;
+                }
+    
+                .chp_pathology_name {
+                    flex-grow: 1;
+                    height: 40px;
+                    line-height: 40px;
+                    font-family: var(--chp-font-opensans-semibold);
+                    color: var(--chp-color-text-white);
+                    text-transform: uppercase;
+                    font-size: 10px;
+                    //
+                    margin-left: 10px;
+                    flex-grow: 1;
+
+                    @include media(">=sm2") {
+                        font-size: 12px !important;
+                    }
+
+                    @include media(">=tablet") {
+                        font-size: 14px !important;
+                        margin-left: 30px;
+                    }
+
+                    @include media(">tablet") {
+                        font-size: 18px;
+                    }
+                }
+    
+                .chp_pathology_icon {
+                    color: var(--chp-color-white);
+                    opacity: 0.8;
+                    transition: transform 1s;
+
+                    svg {
+                        width: 5px;
+                    }
+
+                    @include media(">=tablet") {
+                        svg {
+                            width: .625em;
+                        }
+                    }
+                }
+            }
+
+            .chp_pathology_active {
+                .chp_pathology_icon {
+                    transform: rotate(90deg);
+                }
+            }
+
+            .chp_pathology_content {
+                width: 100%;
+                height: auto;
+                background: var(--chp-color-background);
+                padding: 30px;
+                //
+                display: none;
+
+                @include media(">=tablet") {
+                    padding: 50px;
+                }
+
+                p {
+                    font-size: 10px !important;
+                    width: 95%;
+                    overflow: hidden;
+
+                    @include media(">=sm2") {
+                        font-size: 12px !important;
+                    }
+
+                    @include media(">=tablet") {
+                        font-size: 12px !important;
+                        width: 85%;                    
+                    }
+                }
+            }
+        }
+    }
+}
