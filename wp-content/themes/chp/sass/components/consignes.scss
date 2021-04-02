@@ -8,19 +8,29 @@
     .chp_consignes_container {
         .chp_consignes_category {
             width: 100%;
-            min-height: 140px;
+            min-height: 80px;
             height: auto;
             border-top: 0.1px rgba(0, 0, 0, 0.2) solid;
             border-bottom: 0.1px rgba(0, 0, 0, 0.2) solid;
+
+            @include media(">=tablet") {
+                min-height: 140px;
+            }
 
             &:last-child {
                 border-top: none;
             }
 
             .chp_consignes_thumb {
-                min-height: 140px;
-                height: 140px;
-                line-height: 140px;
+                min-height: 80px;
+                height: 80px;
+                line-height: 80px;
+
+                @include media(">=tablet") {
+                    min-height: 140px;
+                    height: 140px;
+                    line-height: 140px;
+                }
 
                 &:hover {
                     cursor: pointer;
@@ -32,16 +42,31 @@
             }
 
             h4 {
-                font-size: 18px;
+                font-size: 12px;
                 font-family: var(--chp-font-opensans-semibold);
                 color: var(--chp-color-default);
                 text-transform: uppercase;
                 flex-grow: 1;
                 margin-bottom: 0;
+
+                @include media(">=sm2") {
+                    font-size: 14px;
+                }
+
+                @include media(">=tablet") {
+                    font-size: 18px;
+                }
             }
 
             svg {
                 color: var(--chp-color-text-medium);
+                height: 12px;
+                transform: translate(0, -2.5px);
+
+                @include media(">=tablet") {
+                    height: 1em;
+                    transform: translate(0, 0);
+                }
             }
 
             #c_pre_o_content, #c_post_o_content {
@@ -50,18 +75,35 @@
 
             .chp_consignes_content {
                 @extend .paragraph_base;
-                width: 85%;
-                padding: 10px 0 60px;
+                width: 100%;
+                padding: 0px 0 30px;
+
+                @include media(">=tablet") {
+                    width: 85%;
+                    padding: 10px 0 60px;
+                }
 
                 p {
-                    font-size: 12px !important;
+                    font-size: 10px !important;
                     letter-spacing: 1px;
+
+                    @include media(">=sm2") {
+                        font-size: 12px !important;
+                    }
+
+                    @include media(">=tablet") {
+                        font-size: 12px !important;
+                    }
                 }
 
                 hr {
-                    margin: 50px 0;
+                    margin: 30px 0;
                     width: 70%;
                     opacity: 0.5;
+
+                    @include media(">=tablet") {
+                        margin: 50px 0;
+                    }
                 }
             }
         }

@@ -3,28 +3,52 @@
 // CHP Clinique
 
 .chp_h_medecins {
-    min-height: 650px;
-
+    min-height: calc(100vh - 95px);
+    @include media(">=tablet") {
+        min-height: 900px;
+    }
     .chp_container {
-        min-height: 650px;
+        min-height: calc(100vh - 95px);
+        @include media(">=tablet") {
+            min-height: 900px;
+        }    
     }
 }
 
 .chp_cliniques {
     .chp_medecins_image {
-        width: 600px !important;
+        width: 100% !important;
+
+        @include media(">=tablet") {
+            width: 600px !important;
+        }    
     }
 
     .chp_baggio_image {
-        width: 480px !important;
+        width: 100% !important;
+
+        @include media(">=tablet") {
+            width: 480px !important;
+        }    
     }
 
     .chp_button_rdv {
-        margin-left: 60px;
+        margin-top: 20px;
+        display: block;
         color: var(--chp-color-default) !important;
+
+        @include media(">=sm2") {
+            margin-top: 30px;
+        }
 
         &:hover {
             color: var(--chp-color-default-dark) !important;
+        }
+
+        @include media(">=tablet") {
+            margin-top: 0;
+            display: inline-block;
+            margin-left: 60px;
         }
     }
 }
@@ -34,7 +58,11 @@
 
     .chp_medecin_data {
         border-top: 0.1px rgba(0, 0, 0, 0.2) solid;
-        margin-bottom: 80px;
+        margin-bottom: 60px;
+
+        @include media(">=tablet") {
+            margin-bottom: 80px;
+        }
 
         .chp_medecin_data_item {
             width: 100%;
@@ -43,28 +71,52 @@
             border-bottom: 0.1px rgba(0, 0, 0, 0.2) solid;
             //
             display: flex;
-            flex-direction: row;
+            flex-direction: column !important;
             justify-content: flex-start;
             align-items: flex-start;
+
+            @include media(">=tablet") {
+                flex-direction: row !important;
+            }
 
             .chp_medecin_di_1 {
                 font-family: var(--chp-font-opensans-semibold);
                 color: var(--chp-color-default);
                 text-transform: uppercase;
-                font-size: 14px !important;
+                font-size: 12px !important;
                 line-height: 200%;
                 letter-spacing: 0.3px;
-                flex: 1;
+                width: 100%;
+                margin-bottom: 15px;
+
+                @include media(">=sm2") {
+                    font-size: 14px !important;
+                }
+
+                @include media(">=tablet") {
+                    width: unset;
+                    flex: 1;
+                    margin-bottom: 0px;
+                }
             }
 
             .chp_medecin_di_2 {
                 font-family: var(--chp-font-opensans-semibold);
                 color: var(--chp-color-text-dark);
                 min-height: 28px;
-                font-size: 12px !important;
+                font-size: 10px !important;
                 line-height: 28px;
                 letter-spacing: 0.3px;
-                flex: 1;
+                width: 100%;
+
+                @include media(">=sm2") {
+                    font-size: 12px !important;
+                }
+
+                @include media(">=tablet") {
+                    width: unset;
+                    flex: 1;
+                }
             }
         }
     }

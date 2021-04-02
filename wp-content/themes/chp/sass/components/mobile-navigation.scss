@@ -11,6 +11,8 @@
     min-height: 20vh;
     padding: 50px 2rem;
     font-size: 16px;
+    position: absolute;
+    z-index: 9997 !important;
     //
     display: none;
 

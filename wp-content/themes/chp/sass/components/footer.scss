@@ -12,6 +12,8 @@
     font-size: 6px;
     overflow: hidden;
     text-align: center;
+    box-shadow: 0 0 15px var(--chp-color-text-dark);
+    z-index: 9996 !important;
 
     @include media(">galaxyfold") {
         font-size: 8px;

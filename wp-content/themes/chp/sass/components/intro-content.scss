@@ -6,17 +6,34 @@
     color: var(--chp-color-white);
     font-family: var(--chp-font-opensans-light);
     text-transform: uppercase;
-    font-size: 45px;
+    font-size: 16px;
+    line-height: 180%;
     letter-spacing: 3px;
     margin-bottom: 30px;
+
+    @include media(">=tablet") {
+        font-size: 45px;
+    }
 }
 
 .chp_intro_paragraph {
-    width: 55%;
+    width: 100%;
     color: var(--chp-color-white) !important;
-    font-family: var(--chp-font-opensans-light) !important;
-    font-size: 20px !important;
+    font-family: var(--chp-font-opensans) !important;
+    font-size: 10px !important;
     letter-spacing: 3px !important;
     line-height: 200% !important;
-    margin-bottom: 80px !important;
+    margin-bottom: 40px !important;
+
+    @include media(">=sm2") {
+        font-size: 12px !important;
+    }
+
+    @include media(">=tablet") {
+        width: 55%;
+        font-family: var(--chp-font-opensans-light) !important;
+        font-size: 20px !important;
+        line-height: 200% !important;
+        margin-bottom: 80px !important;
+    }
 }

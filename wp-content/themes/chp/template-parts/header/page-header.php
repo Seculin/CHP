@@ -9,7 +9,7 @@
 <header>
     <div class="chp_header_content flex column main-center cross-center">
         <div class="container">
-            <h1 class="chp_header_title">Chirurgie de la paupière</h1>
+            <h1 class="chp_header_title">Chirurgie <br class="portrait-only" />de la paupière</h1>
 
             <h2 class="chp_header_subtitle">Centre de chirurgie de l'orbite, des paupières et des voies lacrymales</h2>
 

@@ -201,6 +201,11 @@ jQuery(document).ready(function () {
       nav_main_mobile_collapsible.classList.add("chp_mobile_navbar_show");
     }
   });
+  var mobile_nav_medecins_link = document.getElementById("chp_mobile_nav_medecins_link");
+  mobile_nav_medecins_link.addEventListener("click", function () {
+    console.log('cliked');
+    nav_main_mobile_collapsible.classList.remove("chp_mobile_navbar_show");
+  });
 });
 
 /***/ }),

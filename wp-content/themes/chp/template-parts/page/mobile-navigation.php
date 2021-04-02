@@ -9,13 +9,9 @@
 <div id="chp_mobile_navbar" class="portrait-only">
     <div id="chp_mobile_navbar_list" class="chp_nav_items flex col main-start cross-start">
 
-        <div class="chp_nav_item" id="chp_mobile_nav_medecins_link">
+        <a href="<?php echo site_url( '/#chp_intro_medecins' ) ?>" class="chp_nav_item" id="chp_mobile_nav_medecins_link">
             Mèdecins <i class="fas fa-chevron-down"></i>
-        </div>
-
-        <div id="chp_nav_mobile_medecins">
-            YoOOOOOOOOO
-        </div>
+        </a>
 
         <div class="chp_nav_item" id="chp_mobile_nav_cliniques_link">
             Cliniques <i class="fas fa-chevron-down"></i>

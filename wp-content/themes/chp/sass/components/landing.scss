@@ -7,7 +7,7 @@ body {
 }
 
 main {
-    margin-top: 85px !important;
+    margin-top: 95px !important;
 
     @include media(">=tablet") {
         margin-top: 105px !important;
@@ -16,16 +16,20 @@ main {
 
 header {
     width: 100%;
-    min-height: calc(100vh - 105px);
+    min-height: calc(100vh - 95px);
     height: auto;
     position: relative;
+
+    @include media(">=tablet") {
+        min-height: calc(100vh - 105px);
+    }
 
     &::before {
         content: "";
         position: absolute;
         top: 0; left: 0;
         width: 100%; height: 100%;
-        filter: blur(10%);
+        filter: blur(1px) contrast(0.9) brightness(0.8);
         //
         background-image: url('./assets/src/img/header-bg.jpg');
         background-position: center !important;
@@ -33,35 +37,90 @@ header {
         background-attachment: inherit !important;
         background-repeat: no-repeat !important;
         background-blend-mode: overlay !important;
+
+        @include media(">=tablet") {
+            filter: blur(0px);
+        }
     }
 
     .chp_header_content {
         position: relative;
         color: var(--chp-color-white);
         height: calc(100vh - 105px);
+        padding: 0 1rem;
+
+        @include media(">=tablet") {
+            padding: 0
+        }
 
         .container {
             .chp_header_title {
-                font-family: var(--chp-font-opensans-light);
+                font-family: var(--chp-font-opensans);
                 text-transform: uppercase;
                 letter-spacing: 3px;
-                font-size: 55px;
-                margin-bottom: 30px;
+                line-height: 180%;
+                font-size: 26px;
+                margin-bottom: 20px;
+
+                @include media(">=sm2") {
+                    font-size: 28px;
+                }
+
+                @include media(">=sm3") {
+                    font-size: 34px;
+                }
+
+                @include media(">=tablet") {
+                    font-family: var(--chp-font-opensans-light);
+                    font-size: 55px;
+                    margin-bottom: 30px;
+                }
             }
 
             .chp_header_subtitle {
-                width: 45%;
+                width: 100%;
                 font-family: var(--chp-font-opensans-light);
-                letter-spacing: 3px;
+                letter-spacing: 1px;
                 line-height: 200%;
-                font-size: 22px;
+                font-size: 12px;
                 margin-bottom: 80px;
+
+                @include media(">=sm2") {
+                    margin-bottom: 120px;
+                    font-size: 14px;
+                }
+
+                @include media(">=sm3") {
+                    margin-bottom: 160px;
+                }
+
+                @include media(">=tablet") {
+                    width: 45%;
+                    font-size: 22px;
+                    margin-bottom: 80px;
+                    letter-spacing: 3px;
+                }
             }
 
             .chp_header_links {
+                flex-direction: column !important;
+
+                @include media(">=tablet") {
+                    flex-direction: row !important;
+                }
+
                 a {
                     letter-spacing: 0.3px;
                     margin-right: 40px;
+                    margin-bottom: 20px;
+
+                    @include media(">=sm2") {
+                        margin-bottom: 30px;
+                    }
+
+                    @include media(">=tablet") {
+                        margin-bottom: 0px;
+                    }
 
                     &:last-child {
                         margin-right: 0;
@@ -77,15 +136,24 @@ header {
     @extend .section_bg_base;
 
     &::before {
-        filter: opacity(50%);
+        filter: opacity(20%);
         //
         background-image: url('./assets/src/img/intro-bg.png');
-        background-position: center !important;
+        background-position: right !important;
         background-size: cover !important;
+
+        @include media(">=tablet") {
+            filter: opacity(50%);
+            background-position: center !important;
+        }
     }
 
     p {
-        margin-bottom: 70px;
+        margin-bottom: 40px;
+
+        @include media(">=tablet") {
+            margin-bottom: 70px;
+        }
     }
 }
 
@@ -94,11 +162,16 @@ header {
     @extend .section_bg_base;
 
     &::before {
-        filter: contrast(80%) brightness(50%);
+        filter: contrast(80%) brightness(40%);
         //
         background-image: url('./assets/src/img/intro_consignes.jpg');
+        background-position: center !important;
         background-position: bottom !important;
         background-size: cover !important;
+
+        @include media(">=tablet") {
+            filter: contrast(80%) brightness(50%);
+        }
     }
 }
 
@@ -112,6 +185,10 @@ header {
         background-image: url('./assets/src/img/intro_pathologies_2.jpg');
         background-position: top !important;
         background-size: cover !important;
+
+        @include media(">=tablet") {
+            background-position: center !important;
+        }
     }
 }
 
@@ -120,46 +197,83 @@ header {
     background: var(--chp-color-background);
 
     .chp_intro_medecins_content {
+        flex-direction: column !important;
+
+        @include media(">=tablet") {
+            flex-direction: row !important;
+        }
+
         .chp_intro_medecin {
             flex: 1;
+            margin-bottom: 80px;
+
+            &:last-child {
+                margin-bottom: 0px;
+            }
+
+            @include media(">=tablet") {
+                margin-bottom: 0px;
+            }
 
             img {
-                width: 170px;
-                height: 170px;
+                width: 100px;
+                height: 100px;
                 border-radius: 80px;
-                margin-bottom: 40px;
+                margin-bottom: 20px;
+
+                @include media(">=tablet") {
+                    width: 170px;
+                    height: 170px;
+                    margin-bottom: 40px;
+                }
             }
 
             .chp_intro_medecin_name {
                 font-family: var(--chp-font-opensans-semibold);
                 color: var(--chp-color-default);
                 text-transform: uppercase;
-                font-size: 24px;
+                font-size: 20px;
                 letter-spacing: 0.5px;
                 // 
-                margin-bottom: 20px;
+                margin-bottom: 15px;
+
+                @include media(">=tablet") {
+                    font-size: 24px;
+                    margin-bottom: 20px;
+                }
             }
 
             .chp_intro_medecin_role {
                 font-family: var(--chp-font-opensans-semibold);
                 color: var(--chp-color-text-dark);
                 text-transform: uppercase;
-                font-size: 16px;
+                font-size: 12px;
                 // 
-                margin-bottom: 20px;
+                margin-bottom: 15px;
+
+                @include media(">=tablet") {
+                    font-size: 16px;
+                    margin-bottom: 20px;
+                }
             }
 
             .chp_intro_medecin_desc {
                 font-family: var(--chp-font-opensans);
                 color: var(--chp-color-text-dark);
-                font-size: 13px;
+                font-size: 10px;
                 letter-spacing: 1px;
                 line-height: 200%;
-                width: 40%;
+                width: 90%;
                 text-align: center;
                 margin-left: auto;
                 margin-right: auto;
-                margin-bottom: 30px;
+                margin-bottom: 20px;
+
+                @include media(">=tablet") {
+                    width: 40%;
+                    font-size: 13px;
+                    margin-bottom: 30px;
+                }
             }
         }
     }

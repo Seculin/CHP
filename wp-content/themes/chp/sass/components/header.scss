@@ -8,6 +8,22 @@
     min-height: 500px;
     height: auto;
     position: relative;
+    padding-left: 1rem;
+    padding-right: 1rem;
+
+    @include media(">=tablet") {
+        font-family: var(--chp-font-opensans);
+        letter-spacing: 8px;
+        font-size: 55px;
+        margin-bottom: 30px;
+        padding-left: 0rem;
+        padding-right: 0rem;
+        min-height: 400px;
+    }
+
+    @include media(">tablet") {
+        min-height: 500px;
+    }
 
     &::before {
         content: "";
@@ -36,20 +52,36 @@
         color: var(--chp-color-default);
         font-family: var(--chp-font-opensans);
         text-transform: uppercase;
-        letter-spacing: 8px;
-        font-size: 55px;
-        margin-bottom: 30px;
+        letter-spacing: 3px;
+        font-size: 24px;
+        line-height: 180%;
+        margin-bottom: 40px;
+
+        @include media(">=tablet") {
+            font-family: var(--chp-font-opensans);
+            letter-spacing: 8px;
+            font-size: 55px;
+            margin-bottom: 30px;
+        }
     }
 
     // Subheading
     h2 {
-        width: 60%;
+        width: 100%;
         color: #4f5050;
         font-family: var(--chp-font-opensans);
-        letter-spacing: 3px;
-        line-height: 250%;
-        font-size: 14px;
-        margin-bottom: 80px;
+        letter-spacing: 1px;
+        line-height: 200%;
+        font-size: 12px;
+        margin-bottom: 60px;
+
+        @include media(">=tablet") {
+            width: 60%;
+            letter-spacing: 3px;
+            line-height: 250%;
+            font-size: 14px;
+            margin-bottom: 80px;
+        }
     }
 
     .chp_darker {

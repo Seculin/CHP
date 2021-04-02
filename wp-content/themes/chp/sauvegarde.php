@@ -11,6 +11,8 @@
 
 <main>
 
+    <?php get_template_part( 'template-parts/page/mobile-navigation' ); ?>
+
     <?php
     if ( have_posts() ) {
     while ( have_posts() ) : the_post();
@@ -36,7 +38,7 @@
         <div class="container">
             <div class="flex col main-start cross-center">
                 <div class="chp_clinique_data">
-                    <div class="flex row main-start cross-start">
+                    <div class="flex row main-start cross-start row-to-col">
                         <div class="chp_clinique_data_col flex col main-start cross-start">
                             <div class="chp_clinique_data_item flex row main-center cross-center">
                                 <i class="fas fa-map-marker-alt"></i>

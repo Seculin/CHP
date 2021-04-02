@@ -3,41 +3,90 @@
 // CHP Clinique
 
 .chp_h_cliniques {
-    min-height: 650px;
+    min-height: calc(100vh - 95px);
+    @include media(">=tablet") {
+        min-height: 900px;
+    }
 
     .chp_container {
-        min-height: 650px;
+        min-height: calc(100vh - 95px);
+        @include media(">=tablet") {
+            min-height: 900px;
+        }
     }
 }
 
 .chp_cliniques {
+    .container {
+        text-align: center !important;
+        overflow: visible;
+        @include media(">=tablet") {
+            text-align: left !important;
+        }
+    }
+
     .chp_cliniques_image {
-        width: 800px;
-        min-height: 140px;
-        height: 140px;
+        width: 100%;
+        min-height: 100px;
+        height: 100px;
         display: flex;
         justify-content: center;
         align-items: center;
-        margin-bottom: 60px;
+        margin-bottom: 50px;
+        overflow: visible;
+
+        @include media(">=tablet") {
+            width: 800px;
+            min-height: 140px;
+            height: 140px;
+            margin-bottom: 60px;
+        }
 
         img {
-            width: 140px !important;
-            height: 140px !important;
+            width: 100px !important;
+            height: 100px !important;
             border-radius: 70px;
-            border: 4px var(--chp-color-white) solid;
+            border: 2px var(--chp-color-white) solid;
+
+            @include media(">=tablet") {
+                width: 140px !important;
+                height: 140px !important;
+                border: 4px var(--chp-color-white) solid;
+            }
         }
     }
 
     h1 {
-        font-size: 45px;
+        font-size: 24px;
+        text-align: center;
+        margin-bottom: 20px;
+
+        @include media(">=tablet") {
+            font-size: 45px;
+            text-align: left;
+            margin-bottom: 40px;
+        }
     }
 
     h2 {
         color: var(--chp-color-text-dark);
-        width: 45%;
-        margin-bottom: 100px;
-        line-height: 250%;
-        font-size: 14px;
+        width: 100%;
+        text-align: center;
+        margin-bottom: 40px;
+        line-height: 200%;
+        font-size: 10px;
+
+        @include media(">=sm2") {
+            font-size: 12px;
+        }
+
+        @include media(">=tablet") {
+            width: 45%;
+            text-align: left;
+            margin-bottom: 100px;
+            line-height: 250%;
+            font-size: 14px;
+        }
     }
 }
 
@@ -49,7 +98,11 @@
         @extend .paragraph_base;
         font-size: 12px !important;
         letter-spacing: 0.5px;
-        margin-bottom: 60px;
+        margin-bottom: 20px;
+
+        @include media(">tablet") {
+            margin-bottom: 60px;
+        }
 
         .chp_clinique_data_col {
             flex: 1;
@@ -82,11 +135,24 @@
         width: 100%;
 
         .chp_clinique_pres_content {
-            margin-bottom: 80px;
+            margin-bottom: 60px;
+
+            @include media(">=tablet") {
+                margin-bottom: 80px;
+            }
             
             p {
-                font-size: 12px !important;
-                width: 85%;
+                font-size: 10px !important;
+                width: 100%;
+
+                @include media(">=sm2") {
+                    font-size: 12px !important;
+                }
+
+                @include media(">=tablet") {
+                    width: 85%;     
+                    font-size: 12px !important;
+                }
             }
         }
 

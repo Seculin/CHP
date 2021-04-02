@@ -11,6 +11,8 @@
 
 <main>
 
+    <?php get_template_part( 'template-parts/page/mobile-navigation' ); ?>
+
     <section class="chp_header chp_h_medecins">
         <div class="chp_container chp_cliniques flex column main-center cross-center">
             <div class="container">
