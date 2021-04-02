@@ -3,7 +3,7 @@
 // Webpack
 import '../test';
 
-jQuery( document ).ready(function() {
+jQuery(document).ready(function () {
     // Links
     //
     // Links - Navigation
@@ -75,18 +75,48 @@ jQuery( document ).ready(function() {
     var i;
 
     for (i = 0; i < pathologies.length; i++) {
-        pathologies[i].addEventListener("click", function() {
-          /* Toggle between adding and removing the "active" class,
-          to highlight the button that controls the panel */
-          this.classList.toggle("chp_pathology_active");
-      
-          /* Toggle between hiding and showing the active panel */
-          var panel = this.nextElementSibling;
-          if (panel.style.display === "block") {
-            panel.style.display = "none";
-          } else {
-            panel.style.display = "block";
-          }
+        pathologies[i].addEventListener("click", function () {
+            /* Toggle between adding and removing the "active" class,
+            to highlight the button that controls the panel */
+            this.classList.toggle("chp_pathology_active");
+
+            /* Toggle between hiding and showing the active panel */
+            var panel = this.nextElementSibling;
+            if (panel.style.display === "block") {
+                panel.style.display = "none";
+            } else {
+                panel.style.display = "block";
+            }
         });
-      }
+    }
+
+    // --------------------------------------
+    //
+    // Mobile Navigation
+
+    var nav_1_mobile = document.getElementById("chp_nav_1_mobile");
+
+    nav_1_mobile.addEventListener("click", function () {
+        this.classList.toggle("chp_nav_1_mobile_active");
+
+        var panel = this.nextElementSibling;
+        if (panel.style.display === "block") {
+            panel.style.display = "none";
+        } else {
+            panel.style.display = "block";
+        }
+    });
+
+    var nav_main_mobile = document.getElementById("chp_mobile_nav_button");
+    var nav_main_mobile_collapsible = document.getElementById("chp_mobile_navbar");
+
+    nav_main_mobile.addEventListener("click", function () {
+        this.classList.toggle("chp_mobile_nav_button_active");
+
+        if (nav_main_mobile_collapsible.classList.contains("chp_mobile_navbar_show")) {
+            nav_main_mobile_collapsible.classList.remove("chp_mobile_navbar_show")
+        } else {
+            nav_main_mobile_collapsible.classList.add("chp_mobile_navbar_show")
+        }
+    });
 });

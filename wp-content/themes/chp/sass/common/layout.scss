@@ -8,6 +8,7 @@
 
 .container {
     width: 100%;
+    padding: 0 1rem;
     overflow: hidden;
 
     @include media(">=tablet") {
@@ -15,6 +16,10 @@
         max-width: 1440px;
         margin: 0 auto;
         overflow: unset;
+    }
+
+    @include media(">tablet") {
+        padding: 0;
     }
 }
 

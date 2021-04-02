@@ -9,7 +9,7 @@
 <nav id="chp_nav" class="flex col">
 
         <div id="chp_nav_1" class="flex row main-start cross-center">
-            <div class="container flex main-end">
+            <div class="container flex main-end landscape-only">
                 <div class="nav_1_item">
                     <i class="fas fa-map-marker-alt"></i>
                     <span>50 Cours Franklin Roosevelt, 69006 Lyon, France</span>
@@ -30,11 +30,41 @@
                     <span>(+33) 472 83 49 19</span>
                 </div>
             </div>
+
+            <div class="container portrait-only">
+                <div id="chp_nav_1_mobile" class="flex main-end cross-center">
+                    <div class="nav_1_item nav_1_thumb_item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <span>50 Cours Franklin Roosevelt, 69006 Lyon, France</span>
+                    </div>
+    
+                    <div id="chp_mobile_nav_1_button">
+                        <i class="fas fa-angle-right mobile_chevron"></i>
+                    </div>
+                </div>
+
+                <div id="chp_nav_1_mobile_content">
+                    <div class="nav_1_item">
+                        <i class="fas fa-envelope"></i>
+                        <span>contact@chirurgie-paupiere-lyon.fr</span>
+                    </div>
+
+                    <div class="nav_1_item">
+                        <i class="fas fa-fax"></i>
+                        <span>(+33) 472 83 49 19</span>
+                    </div>
+
+                    <div class="nav_1_item">
+                        <i class="fas fa-phone-alt"></i>
+                        <span>(+33) 472 83 49 19</span>
+                    </div>
+                </div>
+            </div>
         </div>
 
         <div id="chp_nav_2" class="flex row main-start cross-center">
             <div class="container">
-                <div class="flex row main-start cross-center">
+                <div class="flex row main-start cross-center landscape-only">
                     <div id="chp_nav_site_logo">
                         <a href="<?php echo site_url( '/' ) ?>">
                             <img src="<?php echo get_template_directory_uri(); ?>/assets/src/img/logo_dark.png" alt="site-logo">
@@ -58,6 +88,20 @@
                                 <a href="<?php echo site_url( '/consignes-peri-operatoires' ) ?>">Consignes Péri-Opèratoires</a>
                             </div>
                         </div>
+                    </div>
+                </div>
+
+                <div class="flex row main-start cross-center portrait-only">
+                    <div id="chp_nav_site_logo">
+                        <a href="<?php echo site_url( '/' ) ?>">
+                            <img src="<?php echo get_template_directory_uri(); ?>/assets/src/img/logo_dark.png" alt="site-logo">
+
+                            <!-- <span class="chp_nav_site_title">Chirurgie de la paupière</span> -->
+                        </a>
+                    </div>
+
+                    <div id="chp_mobile_nav_button">
+                        <i class="fas fa-bars"></i>
                     </div>
                 </div>
             </div>

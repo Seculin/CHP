@@ -1,0 +1,58 @@
+@import '../common.scss';
+
+// CHP Navigation
+
+#chp_mobile_navbar {
+    color: var(--chp-color-text-dark);
+    background: var(--chp-color-background);
+    box-shadow: 0 0 10px var(--chp-color-box-shadow);
+    width: 100%;
+    height: auto;
+    min-height: 20vh;
+    padding: 50px 2rem;
+    font-size: 16px;
+    //
+    display: none;
+
+    .chp_nav_items {
+        color: var(--chp-color-text-dark);
+        font-size: 16px;
+        letter-spacing: 0.5px;
+
+        .chp_nav_item {
+            text-transform: uppercase;
+            margin-right: 50px;
+            margin-bottom: 30px;
+            opacity: 0.8;
+
+            &:last-child {
+                margin-bottom: 0px;
+            }
+
+            svg {
+                @extend .chp_chevron_down_style;
+                width: 10px;
+                transform: none;
+            }
+
+            &:hover {
+                opacity: 1;
+                cursor: pointer;
+            }
+
+            &:last-child {
+                margin-right: 0;
+            }
+        }
+
+        #chp_nav_mobile_medecins, #chp_nav_mobile_cliniques {
+            margin-bottom: 30px;
+            color: var(--chp-color-text-dark);
+            font-size: 16px;
+        }
+    }
+}
+
+.chp_mobile_navbar_show {
+    display: block !important;
+}

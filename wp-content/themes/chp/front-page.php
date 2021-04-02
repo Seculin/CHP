@@ -10,7 +10,11 @@
 
 <main>
 
-    <?php get_template_part('template-parts/header/page', 'header'); ?>
+    <?php get_template_part( 'template-parts/page/mobile-navigation' ); ?>
+
+    <div style="min-height: 100vh;"></div>
+
+    <!-- <?php get_template_part('template-parts/header/page', 'header'); ?>
 
     <section id="chp_intro">
         <div class="chp_bg_wrapper">
@@ -91,6 +95,6 @@
                 <a href="<?php echo site_url( '/consignes-peri-operatoires' ) ?>" class="chp_button chp_button_light">En savoir plus <i class="fas fa-chevron-down"></i></a>
             </div>
         </div>
-    </section>
+    </section> -->
 
     <?php get_footer(); ?>
