@@ -84,7 +84,7 @@
                 </div>
             </div>
 
-            <a href="https://www.doctolib.fr/ophtalmologue/lyon/jeremie-barbier" target="_blank" class="chp_button chp_button_dark">En savoir plus <i class="fas fa-chevron-down"></i></a>
+            <a href="https://www.doctolib.fr/ophtalmologue/lyon/jeremie-barbier" target="_blank" class="chp_button chp_button_dark">Prendre rendez-vous <i class="fas fa-chevron-down"></i></a>
         </div>
     </section>
 
