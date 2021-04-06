@@ -9,15 +9,10 @@
 <nav id="chp_nav" class="flex col">
 
         <div id="chp_nav_1" class="flex row main-start cross-center">
-            <div class="container flex main-end landscape-only">
+            <div class="container flex main-end landscape-only-nav">
                 <div class="nav_1_item">
                     <i class="fas fa-map-marker-alt"></i>
                     <span>50 Cours Franklin Roosevelt, 69006 Lyon, France</span>
-                </div>
-
-                <div class="nav_1_item">
-                    <i class="fas fa-envelope"></i>
-                    <span>contact@chirurgie-paupiere-lyon.fr</span>
                 </div>
 
                 <div class="nav_1_item">
@@ -31,7 +26,7 @@
                 </div>
             </div>
 
-            <div class="container portrait-only">
+            <div class="container portrait-only-nav">
                 <div id="chp_nav_1_mobile" class="flex main-end cross-center">
                     <div class="nav_1_item nav_1_thumb_item">
                         <i class="fas fa-map-marker-alt"></i>
@@ -44,11 +39,6 @@
                 </div>
 
                 <div id="chp_nav_1_mobile_content">
-                    <div class="nav_1_item">
-                        <i class="fas fa-envelope"></i>
-                        <span>contact@chirurgie-paupiere-lyon.fr</span>
-                    </div>
-
                     <div class="nav_1_item">
                         <i class="fas fa-fax"></i>
                         <span>(+33) 472 83 49 19</span>
@@ -64,7 +54,7 @@
 
         <div id="chp_nav_2" class="flex row main-start cross-center">
             <div class="container">
-                <div class="flex row main-start cross-center landscape-only">
+                <div class="flex row main-start cross-center landscape-only-nav">
                     <div id="chp_nav_site_logo">
                         <a href="<?php echo site_url( '/' ) ?>">
                             <img src="<?php echo get_template_directory_uri(); ?>/assets/src/img/logo_dark.png" alt="site-logo">
@@ -76,7 +66,7 @@
                     <div id="chp_nav_wrapper">
                         <div class="chp_nav_items flex row main-end">
                             <div class="chp_nav_item" id="chp_nav_medecins_link">
-                                Mèdecins <i class="fas fa-chevron-down"></i>
+                                Médecins <i class="fas fa-chevron-down"></i>
                             </div>
                             <div class="chp_nav_item" id="chp_nav_cliniques_link">
                                 Cliniques <i class="fas fa-chevron-down"></i>
@@ -85,13 +75,13 @@
                                 <a href="<?php echo site_url( '/pathologies' ) ?>">Pathologies</a>
                             </div>
                             <div class="chp_nav_item">
-                                <a href="<?php echo site_url( '/consignes-peri-operatoires' ) ?>">Consignes Péri-Opèratoires</a>
+                                <a href="<?php echo site_url( '/consignes-peri-operatoires' ) ?>">Consignes Péri-Opératoires</a>
                             </div>
                         </div>
                     </div>
                 </div>
 
-                <div class="flex row main-start cross-center portrait-only">
+                <div class="flex row main-start cross-center portrait-only-nav">
                     <div id="chp_nav_site_logo">
                         <a href="<?php echo site_url( '/' ) ?>">
                             <img src="<?php echo get_template_directory_uri(); ?>/assets/src/img/logo_dark.png" alt="site-logo">

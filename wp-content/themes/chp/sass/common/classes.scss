@@ -364,4 +364,22 @@ $sizes: 9;
     }
 }
 
+@media (orientation: landscape) and (min-width: 1200px) {
+    .portrait-only-nav {
+        display: none !important;
+    }
+}
+
+@media (orientation: portrait) {
+    .landscape-only-nav {
+        display: none !important;
+    }
+}
+
+@media (orientation: landscape) and (max-width: 1200px) {
+    .landscape-only-nav {
+        display: none !important;
+    }
+}
+
 // ------------------------------------------------------------

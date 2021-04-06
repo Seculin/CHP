@@ -6,11 +6,11 @@
 */
 ?>
 
-<div id="chp_mobile_navbar" class="portrait-only">
+<div id="chp_mobile_navbar" class="portrait-only-nav">
     <div id="chp_mobile_navbar_list" class="chp_nav_items flex col main-start cross-start">
 
         <a href="<?php echo site_url( '/#chp_intro_medecins' ) ?>" class="chp_nav_item" id="chp_mobile_nav_medecins_link">
-            Mèdecins <i class="fas fa-chevron-down"></i>
+            Médecins <i class="fas fa-chevron-down"></i>
         </a>
 
         <div class="chp_nav_item" id="chp_mobile_nav_cliniques_link">
@@ -55,7 +55,7 @@
                         <div class="chp_ndc_cat_line"></div>
                     </div>
 
-                    <div class="chp_ndc_clinique flex row main-start cross-center">
+                    <div class="chp_ndc_clinique chp_ndc_clinique_kleber flex row main-start cross-center">
                         <img src="<?php echo get_template_directory_uri(); ?>/assets/src/img/clinic3.jpg" class="nav_img" alt="clinic-photo-thumbnail">
 
                         <div class="chp_ndc_clinique_info flex col main-center cross-start">
@@ -75,7 +75,7 @@
         </div>
 
         <div class="chp_nav_item">
-            <a href="<?php echo site_url( '/consignes-peri-operatoires' ) ?>">Consignes Péri-Opèratoires</a>
+            <a href="<?php echo site_url( '/consignes-peri-operatoires' ) ?>">Consignes Péri-Opératoires</a>
         </div>
     </div>
 </div>
