@@ -169,6 +169,18 @@
                             }
                         }
                     }
+
+                    .chp_ndc_clinique_kleber {
+                        margin-bottom: 20px !important;
+
+                        @include media(">=tablet") {
+                            margin-bottom: 50px !important;
+                        }
+
+                        @include media(">=1200px") {
+                            margin-bottom: 0px !important;
+                        }
+                    }
                 }
 
                 .chp_nd_clinique_column {
