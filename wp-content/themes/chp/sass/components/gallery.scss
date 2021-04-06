@@ -1,0 +1,128 @@
+@import "../common.scss";
+
+// CHP Gallery
+
+.chp-gallery {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    flex-direction: column;
+    margin-bottom: 30px;
+
+    &:last-child {
+        margin-bottom: 0px;
+
+        @include media(">=tablet") {
+            margin-bottom: 30px;
+        }
+    }
+
+    @include media(">=tablet") {
+        flex-direction: row;
+        margin-bottom: 80px;
+    }
+
+    h6 {
+        width: 100%;
+        color: rgba(0, 0, 0, 0.7);
+        font-family: var(--chp-font-opensans-semibold) !important;
+        font-size: 10px;
+        letter-spacing: 0.1px;
+        margin-bottom: 25px;
+
+        @include media(">=tablet") {
+            font-size: 13px;
+            margin-bottom: 35px;
+        }
+    }
+
+    .chp-gallery-item {
+        width: 100%;
+        height: auto;
+        background: var(--chp-color-default);
+        border: 6px var(--chp-color-default) solid;
+        border-radius: 10px;
+        box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+        transition: box-shadow 1s;
+        margin-bottom: 20px;
+
+        @include media(">=tablet") {
+            width: 45%;
+            margin-bottom: 0px;
+        }
+
+        @include media(">tablet") {
+            width: 35%;
+            margin-bottom: 0px;
+        }
+
+        &:hover {
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+            transition: box-shadow 1s;
+        }
+
+        img {
+            width: 100%;
+            overflow: hidden;
+            border-radius: 10px;
+        }
+
+        .chp-gallery-item-thumb {
+            width: 100%;
+            height: 30px;
+            line-height: 30px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-direction: row;
+
+            @include media(">=tablet") {
+                height: 40px;
+                line-height: 40px;
+            }
+
+            span, div.chp-gallery-item-text {
+                display: inline-block;
+                height: 30px;
+                line-height: 30px;
+                font-size: 10px;
+                color: var(--chp-color-white);
+                font-family: var(--chp-font-opensans-semibold) !important;
+                text-transform: uppercase;
+                margin-left: 10px;
+                margin-right: 10px;
+                transform: translate(0, 3px);
+
+                @include media(">=sm2") {
+                    font-size: 12px;
+                }
+
+                @include media(">=tablet") {
+                    height: 40px;
+                    line-height: 40px;
+                    font-size: 14px;
+                    margin-left: 20px;
+                    margin-right: 20px;
+                }
+            }
+
+            .chp-gallery-line {
+                width: 100%;
+                min-height: 1px;
+                max-height: 1px;
+                background: var(--chp-color-white);
+                margin-right: 10px;
+                transform: translate(0, 3px);
+
+                @include media(">=tablet") {
+                    margin-right: 20px;
+                }
+            }
+
+            p {
+                display: none;
+            }
+        }
+    }
+}
