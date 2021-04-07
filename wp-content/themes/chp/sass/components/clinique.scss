@@ -122,6 +122,7 @@
 
         @include media(">tablet") {
             margin-bottom: 60px;
+            font-size: 14px !important;
         }
 
         .chp_clinique_data_col {
@@ -172,6 +173,10 @@
                 @include media(">=tablet") {
                     width: 85%;     
                     font-size: 12px !important;
+                }
+
+                @include media(">tablet") {
+                    font-size: 14px !important;
                 }
             }
         }

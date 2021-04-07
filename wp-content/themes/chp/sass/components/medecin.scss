@@ -102,6 +102,7 @@
 
                 @include media(">tablet") {
                     padding-right: 0;
+                    font-size: 16px !important;
                 }
             }
 
@@ -121,6 +122,10 @@
                 @include media(">=tablet") {
                     width: unset;
                     flex: 1;
+                }
+
+                @include media(">tablet") {
+                    font-size: 14px !important;
                 }
             }
         }

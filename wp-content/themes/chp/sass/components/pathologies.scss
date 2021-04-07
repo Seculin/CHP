@@ -81,7 +81,7 @@
                     }
 
                     @include media(">tablet") {
-                        font-size: 18px;
+                        font-size: 16px !important;
                     }
                 }
     
@@ -130,7 +130,7 @@
                     }
 
                     @include media(">=tablet") {
-                        font-size: 12px !important;
+                        font-size: 14px !important;
                         width: 85%;                    
                     }
                 }
