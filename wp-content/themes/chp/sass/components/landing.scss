@@ -39,7 +39,7 @@ header {
         background-blend-mode: overlay !important;
 
         @include media(">=tablet") {
-            filter: blur(0px);
+            filter: blur(0px) brightness(0.8) contrast(0.9) saturate(1.1);
         }
     }
 
